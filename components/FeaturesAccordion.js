@@ -88,7 +88,7 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
         </div>
         <span
           className={`flex-1 text-base-content ${
-            isOpen ? "text-red-600 font-semibold" : ""
+            isOpen ? "font-semibold" : ""
           }`}
         >
           <h3 className="inline text-4xl">{title}</h3>

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="bg-base-300">
+      <main>
         <Hero />
         <FeaturesAccordion />
         {/* <FeaturesAccordion2 /> */}
