@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <Image
         src={heroImage}
-        alt="Description ou prompt de la photo"
+        alt="Description de la photo"
         className=""
         priority={true}
         width={600}

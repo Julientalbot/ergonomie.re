@@ -3,7 +3,7 @@ import React from "react";
 
 const CTAButton = ({ className }) => {
   return (
-    <Link href="#cal" className={`px-6 py-2 rounded-lg ${className}`}>
+    <Link href="#cal" className={`bg-black px-6 py-2 rounded-lg ${className}`}>
       Planifier un rendez-vous
     </Link>
   );
