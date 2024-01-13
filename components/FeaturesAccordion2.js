@@ -190,9 +190,9 @@ const FeaturesAccordion = () => {
   const [featureSelected, setFeatureSelected] = useState(0);
 
   return (
-    <section
+    <section 
       className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 "
-      id="features"
+      id="comment"
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">

@@ -78,7 +78,7 @@ const Testimonial = ({ i }) => {
 
 const Testimonials3 = () => {
   return (
-    <section id="testimonials" className="my-6 pb-4 scroll-mt-8">
+    <section className="my-6 pb-4 scroll-mt-8">
       <div className="p-2 max-w-7xl mx-auto">
         <div className="flex flex-col text-center w-full mb-6">
           <div className="">

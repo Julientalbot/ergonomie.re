@@ -13,7 +13,7 @@ import ButtonSignin from "@/components/ButtonSignin";
 const links = [
   {
     href: "/blog/",
-    label: "All Posts",
+    label: "Tous les posts",
   },
 ];
 

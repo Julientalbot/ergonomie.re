@@ -11,15 +11,15 @@ import CTAButton from "./CTAButton";
 
 const links = [
   {
-    href: "/#problem",
+    href: "/#pourquoi",
     label: "Pourquoi ?",
   },
   {
-    href: "/#testimonials",
+    href: "/#comment",
     label: "Comment ?",
   },
   {
-    href: "/#about",
+    href: "/#à-propos",
     label: "Qui suis-je ?",
   },
   {
