@@ -156,7 +156,7 @@ const FeaturesAccordion = () => {
   const [featureSelected, setFeatureSelected] = useState(0);
 
   return (
-    <section className="px-2 py-6 max-w-7xl mx-auto" id="features">
+    <section className="px-2 py-6 max-w-7xl mx-auto" id="comment">
       <div className="">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-8 text-center">
           Comment je peux

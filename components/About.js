@@ -4,7 +4,7 @@ import myImage from "public/home/me.jpg";
 const About = () => {
   return (
     <section
-      id="about"
+      id="à-propos"
       className="relative max-w-7xl mx-auto flex flex-col justify-center items-center gap-4 px-2 py-6 xl:pt-8 xl:pb-20 xl:my-20"
     >
       <div className="xl:absolute xl:top-0 xl:left-0 xl:max-w-md p-6 rounded-lg bg-white shadow-xl flex flex-col gap-4">

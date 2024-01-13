@@ -13,7 +13,7 @@ const Hero = () => {
           <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-black text-white z-10 before:-z-10">
             optimal
           </span>{" "}
-          {"l'environnement de travail de vos équipes."}
+          {"l'environnement de travail de vos équipes"}
         </h1>
         <div className="text-lg opacity-80 leading-relaxed flex flex-col gap-2">
           <p>
@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <CTAButton className="bg-black text-white" />
+          <CTAButton className="text-white" />
         </div>
 
         <TestimonialsAvatars priority={true} />

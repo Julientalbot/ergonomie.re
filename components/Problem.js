@@ -43,7 +43,7 @@ const Step = ({ emoji, text }) => {
 // - Features: "ShipFast has user auth, Stripe, emails all set up for you"
 const Problem = () => {
   return (
-    <section className="scroll-mt-8" id="problem">
+    <section className="scroll-mt-8" id="pourquoi">
       <div className="max-w-7xl mx-auto px-4 py-16 text-center">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           {"46% de productivité en moins à cause d'une ergonomie inadaptée"}
@@ -67,8 +67,10 @@ const Problem = () => {
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
           <Step emoji="💸" text="Coûts croissants en santé et recrutement" />
-        </div>
-        <CTAButton className="bg-black text-white" />
+       </div>
+        <div className="flex justify-center">
+          <CTAButton className="text-white" />
+        </div>   
       </div>
     </section>
   );

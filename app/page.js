@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
         <Problem />
         <FeaturesAccordion />
-        <FeaturesAccordion2 />
+        {/* <FeaturesAccordion2 /> */}
         {/* <FeaturesListicle /> */}
         <Testimonials3 />
         <CalEmbed />
