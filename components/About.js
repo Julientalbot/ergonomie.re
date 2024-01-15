@@ -21,7 +21,7 @@ const About = () => {
         </p>
       </div>
       <div className="xl:absolute xl:top-0 xl:right-0 xl:max-w-md p-6 rounded-lg bg-white shadow-xl flex flex-col gap-2 xl:-rotate-1">
-        <p className="text-3xl font-bold">{"+ 2 ans"}</p>
+        <p className="text-3xl font-bold">{"+ 3 ans"}</p>
         <p>{"à accompagner entreprises réunionnaises."}</p>
       </div>
       <div className="xl:absolute xl:top-1/3 xl:right-0 xl:max-w-md p-6 rounded-lg bg-white shadow-xl flex flex-col gap-2">

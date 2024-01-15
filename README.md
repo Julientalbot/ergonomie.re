@@ -1,6 +1,6 @@
-# ShipFast — Javascript
+# ergonomie.re — Javascript
 
-Hey maker 👋 it's Marc from [ShipFast](https://shipfa.st/docs). Let's get your startup off the ground, FAST ⚡️
+Hey 👋 it's Julien from [ergonomie.re](https://ergonomie.re/#à-propos/). Let's get your startup off the ground, FAST ⚡️
 
 <sub>**Watch/Star the repo to be notified when updates are pushed**</sub>
 
