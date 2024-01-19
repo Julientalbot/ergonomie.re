@@ -22,7 +22,7 @@ export default async function Blog() {
           The {config.appName} Blog
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          Découvrez comment rendre optimal l'environnement de travail de vos équipes
+          {"Découvrez comment rendre optimal l'environnement de travail de vos équipes"}
         </p>
       </section>
 
