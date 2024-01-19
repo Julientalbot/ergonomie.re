@@ -32,7 +32,7 @@ const links = [
 // );
 const cta = (
   // <ButtonSignin extraStyle="bg-base-100 hover:bg-base-100 hover:text-black" />
-  <CTAButton className="bg-base-100 text-black" />
+  <CTAButton className=" text-secondary" />
 );
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
