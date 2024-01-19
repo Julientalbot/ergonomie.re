@@ -67,10 +67,10 @@ const Problem = () => {
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
           <Step emoji="💸" text="Coûts croissants en santé et recrutement" />
-       </div>
+        </div>
         <div className="flex justify-center">
-          <CTAButton className="text-white" />
-        </div>   
+          <CTAButton className="text-white animate-ctaBlack" />
+        </div>
       </div>
     </section>
   );
