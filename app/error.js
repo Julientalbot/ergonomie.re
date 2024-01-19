@@ -9,7 +9,7 @@ export default function Error({ error, reset }) {
   return (
     <>
       <div className="h-screen w-full flex flex-col justify-center items-center text-center gap-6 p-6">
-        <div className="p-6 bg-white rounded-xl">
+        <div className="p-6 bg-base-100 rounded-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"

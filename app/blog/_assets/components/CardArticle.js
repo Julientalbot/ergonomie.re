@@ -24,6 +24,7 @@ const CardArticle = ({
           <figure>
             <Image
               src={article.image.src}
+              blurDataURL={article.image.src}
               alt={article.image.alt}
               width={600}
               height={338}
