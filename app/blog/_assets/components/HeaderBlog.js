@@ -209,7 +209,7 @@ const HeaderBlog = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        {/* <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div> */}
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
