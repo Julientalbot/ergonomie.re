@@ -13,12 +13,25 @@ module.exports = {
       },
       animation: {
         opacity: "opacity 0.25s ease-in-out",
+        ctaRed: "ctaRed 2s ease-in-out infinite",
+        ctaBlack: "ctaBlack 2s ease-in-out infinite",
         appearFromRight: "appearFromRight 300ms ease-in-out",
         wiggle: "wiggle 1.5s ease-in-out infinite",
         popup: "popup 0.25s ease-in-out",
         shimmer: "shimmer 3s ease-out infinite alternate",
       },
       keyframes: {
+        ctaRed: {
+          "0%": { opacity: 1, },
+          "50%": { opacity: .75, boxShadow: "0px 0px 4px 1px #F33" },
+          "100%": { opacity: 1 },
+        },
+        ctaBlack: {
+          "0%": { opacity: 1, },
+          "50%": { opacity: .75, boxShadow: "0px 0px 4px 1px #000" },
+          "100%": { opacity: 1 },
+        },
+
         opacity: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
