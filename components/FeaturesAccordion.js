@@ -80,16 +80,14 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
         aria-expanded={isOpen}
       >
         <div
-          className={`mt-2 transition-transform duration-5000 ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`}
+          className={`mt-2 transition-transform duration-5000 ${isOpen ? "rotate-180" : "rotate-0"
+            }`}
         >
           <ChevronDown />
         </div>
         <span
-          className={`flex-1 text-base-content ${
-            isOpen ? "text-primary font-semibold" : ""
-          }`}
+          className={`flex-1 text-base-content ${isOpen ? "text-primary font-semibold" : ""
+            }`}
         >
           <h3 className="inline text-4xl">{title}</h3>
         </span>
@@ -160,7 +158,7 @@ const FeaturesAccordion = () => {
       <div className="">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-8 text-center">
           Comment je peux
-          <span className="bg-neutral rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             vous aider
           </span>
         </h2>
