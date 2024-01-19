@@ -31,8 +31,8 @@ const links = [
 // const cta = (
 // );
 const cta = (
-  // <ButtonSignin extraStyle="bg-white hover:bg-white hover:text-black" />
-  <CTAButton className="bg-white text-black" />
+  // <ButtonSignin extraStyle="bg-base-100 hover:bg-base-100 hover:text-black" />
+  <CTAButton className="bg-base-100 text-black" />
 );
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
@@ -47,7 +47,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-black text-white">
+    <header className="bg-primary text-white">
       <nav
         className="container flex items-center justify-between max-w-7xl p-2 mx-auto"
         aria-label="Global"
@@ -102,7 +102,7 @@ const Header = () => {
             <Link
               href={link.href}
               key={link.href}
-              className="px-6 py-2 rounded-lg hover:bg-white hover:text-black"
+              className="px-6 py-2 rounded-lg hover:bg-base-100 hover:text-black"
               title={link.label}
             >
               {link.label}
@@ -117,7 +117,7 @@ const Header = () => {
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full p-2 overflow-y-auto bg-black sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
+          className={`fixed inset-y-0 right-0 z-10 w-full p-2 overflow-y-auto bg-primary sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
         >
           {/* Your logo/name on small screens */}
           <div className="flex items-center justify-between">

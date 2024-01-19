@@ -13,7 +13,7 @@ export default function CalEmbed() {
     })();
   }, []);
   return (
-    <section className="bg-black text-white scroll-mt-8" id="cal">
+    <section className="bg-primary text-white scroll-mt-8" id="cal">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start gap-28 items-center px-2 py-20">
         <div className="flex flex-col gap-8">
           <div className="p-2 rounded-lg font-bold bg-[#353d34] w-fit">

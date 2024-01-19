@@ -11,7 +11,7 @@ const CTAButton = ({ className }) => {
   return (
     <Link
       href="#cal"
-      className={`bg-black px-6 py-2 rounded-lg ${className}`}
+      className={`bg-primary px-6 py-2 rounded-lg ${className}`}
       style={ctaStyle}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
