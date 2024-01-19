@@ -33,6 +33,7 @@ const styles = {
 // All the blog articles data display in the /blog/[articleId].js pages.
 export const articles = [
   require("./articles/introducing-supabase"),
+  require("./articles/introducing-ergonomie"),
 ].map((article) => {
   return article.default({ categories, slugs, authors, styles, ...slugs })
 });

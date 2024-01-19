@@ -25,6 +25,15 @@ const categories = [
     descriptionShort:
       "Learn how to use ShipFast with these step-by-step tutorials.",
   },
+  {
+    slug: categorySlugs.environnement,
+    title: "Environnement de travail",
+    titleShort: "Environnement",
+    description:
+      "Améliorer sa productivité",
+    descriptionShort:
+      "Améliorer son environnement.",
+  }
 ];
 
 export default categories;
