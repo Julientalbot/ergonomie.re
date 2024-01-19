@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <CTAButton className="text-white" />
+          <CTAButton className="text-white animate-ctaBlack" />
         </div>
 
         <TestimonialsAvatars priority={true} />
