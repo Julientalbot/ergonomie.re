@@ -19,7 +19,7 @@ export default function CalEmbed() {
   return (
     <section className="bg-primary text-white scroll-mt-8" id="cal">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start gap-28 items-center px-2 py-20">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 flex-1">
           <div className="p-2 rounded-lg font-bold bg-[#353d34] w-fit">
             Durée : 30 minutes
           </div>
@@ -49,7 +49,7 @@ export default function CalEmbed() {
             }
           </p>
         </div>
-        <div className="flex flex-col gap-5 my-auto">
+        <div className="flex flex-col gap-5 my-auto flex-1 items-center">
           <Link
             target="_blank"
             href="mailto:julien.talbot@ergonomie.re"
