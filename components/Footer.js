@@ -7,6 +7,8 @@ import Link from "next/link";
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
 
+import appInfos from "@/package.json"
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-white border-t border-base-content/10">
@@ -30,7 +32,7 @@ const Footer = () => {
 
             <p className="mt-3 text-sm">{config.appDescription}</p>
             <p className="mt-3 text-sm">
-              Copyright © {new Date().getFullYear()} - All rights reserved
+              Copyright © {new Date().getFullYear()} - All rights reserved - <span className="text-xs opacity-75">v{appInfos.version}</span>
             </p>
           </div>
           <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
