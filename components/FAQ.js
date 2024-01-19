@@ -28,9 +28,8 @@ const faqList = [
   },
 ];
 
-const Item = ({ item }) => {
+const Item = ({ item, isOpen, setIsOpen }) => {
   const accordion = useRef(null);
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <li>
@@ -38,7 +37,7 @@ const Item = ({ item }) => {
         className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
         onClick={(e) => {
           e.preventDefault();
-          setIsOpen(!isOpen);
+          setIsOpen();
         }}
         aria-expanded={isOpen}
       >
@@ -57,18 +56,16 @@ const Item = ({ item }) => {
             width="16"
             height="2"
             rx="1"
-            className={`transform origin-center transition duration-200 ease-out ${
-              isOpen && "rotate-180"
-            }`}
+            className={`transform origin-center transition duration-200 ease-out ${isOpen && "rotate-180"
+              }`}
           />
           <rect
             y="7"
             width="16"
             height="2"
             rx="1"
-            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-              isOpen && "rotate-180 hidden"
-            }`}
+            className={`transform origin-center rotate-90 transition duration-200 ease-out ${isOpen && "rotate-180 hidden"
+              }`}
           />
         </svg>
       </button>
@@ -89,11 +86,14 @@ const Item = ({ item }) => {
 };
 
 const FAQ = () => {
+  const [open, setOpen] = useState(null);
+
+
   return (
     <section id="faq">
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         <div className="flex flex-col text-left basis-1/2">
-          <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
+          {/* <p className="inline-block font-semibold text-primary mb-4">FAQ</p> */}
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
             Questions fréquemment posées
           </p>
@@ -101,7 +101,7 @@ const FAQ = () => {
 
         <ul className="basis-1/2">
           {faqList.map((item, i) => (
-            <Item key={i} item={item} />
+            <Item key={i} item={item} setIsOpen={() => setOpen(currentOpen => i !== currentOpen ? i : null)} isOpen={open === i} />
           ))}
         </ul>
       </div>
