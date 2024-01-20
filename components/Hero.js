@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
 import Link from "next/link";
-import heroImage from "/home/julien/ergonomie.re/public/home/hero.svg";
+import heroImage from "/public/home/hero.svg";
 import CTAButton from "./CTAButton";
 
 const Hero = () => {
