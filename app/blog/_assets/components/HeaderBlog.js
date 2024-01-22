@@ -147,7 +147,6 @@ const HeaderBlog = () => {
   }, [searchParams]);
 
   return (
-    <Suspense fallback={<div>Chargement...</div>}>
     <header className="bg-primary">
       <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
         {/* Your logo/name on large screens */}
@@ -282,7 +281,6 @@ const HeaderBlog = () => {
         </div>
       </div>
     </header>
-    </Suspense>
   );
 };
 
