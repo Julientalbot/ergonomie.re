@@ -22,10 +22,10 @@ const links = [
     href: "/#à-propos",
     label: "Qui suis-je ?",
   },
-  // {
-    // href: "/blog",
-    // label: "Blog",
-  // },
+  {
+    href: "/blog",
+    label: "Blog",
+  },
 ];
 
 // const cta = (

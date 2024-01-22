@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
@@ -18,7 +18,7 @@ const links = [
 ];
 
 const cta = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
+  <ButtonSignin text="Optimisez votre entreprise" extraStyle="btn-primary md:btn-sm" />
 );
 
 const ButtonPopoverCategories = () => {
@@ -138,7 +138,7 @@ const ButtonAccordionCategories = () => {
 // By default it shows the logo, the links, and the CTA.
 // In the links, there's a popover with the categories.
 const HeaderBlog = () => {
-  const searchParams = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
 
   // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
@@ -147,6 +147,7 @@ const HeaderBlog = () => {
   }, [searchParams]);
 
   return (
+    <Suspense fallback={<div>Chargement...</div>}>
     <header className="bg-primary">
       <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
         {/* Your logo/name on large screens */}
@@ -281,6 +282,7 @@ const HeaderBlog = () => {
         </div>
       </div>
     </header>
+    </Suspense>
   );
 };
 
