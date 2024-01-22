@@ -60,8 +60,7 @@ const authors = [
     // The job to display in the author's bio. Up to 60 characters.
     job: "Dirigeant d'ergonomie.re",
     // The description of the author to display in the author's bio. Up to 160 characters.
-    description:
-      "Je suis Julien Talbot, consultant en ergonomie et fondateur d'ergonomie.re",
+    description: "Je suis Julien Talbot, consultant en ergonomie et fondateur d'ergonomie.re",
     // The avatar of the author to display in the author's bio and avatar badge. It's better to use a local image, but you can also use an external image (https://...)
     avatar: "/blog/images/julien.png",
     // A list of social links to display in the author's bio.

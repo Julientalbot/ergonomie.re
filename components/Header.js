@@ -23,8 +23,8 @@ const links = [
     label: "Qui suis-je ?",
   },
   // {
-  //   href: "/blog",
-  //   label: "Blog",
+    // href: "/blog",
+    // label: "Blog",
   // },
 ];
 

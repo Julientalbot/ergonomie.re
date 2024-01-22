@@ -1,12 +1,12 @@
 import Image from "next/image";
 const article = ({ categories, slugs, authors, styles, author, category, categorySlugs, authorSlugs }) => ({
   // The unique slug to use in the URL. It's also used to generate the canonical URL.
-  slug: "introducing-supabase",
+  slug: "introducing-ergonomie",
   // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
-  title: "Introducing Supabase to ShipFast",
+  title: "Introduire ergonomie.re",
   // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
   description:
-    "Supabase is an open-source Firebase alternative. It's a great tool for building a backend for your app. It's now integrated with ShipFast!",
+    "Ergonomie.re a vocation à améliorer les conditions de travail des entreprises réunionnaises, en prenant en compte les dimensions de santé des personnes et de performance globale de l'entreprise.",
   // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
   categories: [
     categories.find((category) => category.slug === categorySlugs.feature),
@@ -14,13 +14,13 @@ const article = ({ categories, slugs, authors, styles, author, category, categor
   // The author of the article. It's used to generate a link to the author's bio page.
   author: authors.find((author) => author.slug === authorSlugs.julien),
   // The date of the article. It's used to generate the meta date.
-  publishedAt: "2023-11-20",
+  publishedAt: "2024-01-22",
   image: {
     // The image to display in <CardArticle /> components.
-    src: "/blog/introducing-supabase/header.png",
+    src: "/blog/introducing-ergonomie.re/header.png",
     // The relative URL of the same image to use in the Open Graph meta tags & the Schema Markup JSON-LD.
-    urlRelative: "/blog/introducing-supabase/header.jpg",
-    alt: "Supabase and ShipFast logo combined",
+    urlRelative: "/blog/introducing-ergonomie.re/header.png",
+    alt: "Image ergonomie.re",
   },
   // The actual content of the article that will be shown under the <h1> title in the article page.
   content: (

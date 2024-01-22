@@ -4,7 +4,7 @@ const slugs = {
     tutorial: "tutorial",
   },
   authorSlugs: {
-    marc: "marc"
+    julien: "Julien"
   }
 };
 
