@@ -3,10 +3,10 @@ const article = ({ categories, slugs, authors, styles, author, category, categor
   // The unique slug to use in the URL. It's also used to generate the canonical URL.
   slug: "introducing-ergonomie",
   // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
-  title: "Introduire ergonomie.re",
+  title: "Introduction d'ergonomie.re",
   // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
   description:
-    "Ergonomie.re a vocation à améliorer les conditions de travail des entreprises réunionnaises, en prenant en compte les dimensions de santé des personnes et de performance globale de l'entreprise.",
+    "Ergonomie.re a vocation à contribuer de façon significative à l'amélioration des conditions de travail des entreprises réunionnaises, en prenant en compte tant les dimensions relevant de la santé des personnes que de celles relevant de la performance globale et durable des entreprises.",
   // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
   categories: [
     categories.find((category) => category.slug === categorySlugs.feature),
