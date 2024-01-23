@@ -22,10 +22,11 @@ const links = [
     href: "/#à-propos",
     label: "Qui suis-je ?",
   },
-  // {
-  //   href: "/blog",
-  //   label: "Blog",
-  // },
+  {
+    href: "/blog",
+    label: "Blog",
+    prefetch: false
+  },
 ];
 
 // const cta = (
@@ -102,6 +103,7 @@ const Header = () => {
             <Link
               href={link.href}
               key={link.href}
+              prefetch={link?.prefetch !== undefined ? link?.prefetch : true}
               className="px-6 py-2 rounded-lg hover:bg-base-100 hover:text-black"
               title={link.label}
             >

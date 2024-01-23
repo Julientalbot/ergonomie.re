@@ -14,6 +14,7 @@ const links = [
   {
     href: "/blog/",
     label: "Tous les posts",
+    prefetch: false
   },
 ];
 
@@ -198,6 +199,7 @@ const HeaderBlog = () => {
             <Link
               href={link.href}
               key={link.href}
+              prefetch={link?.prefetch !== undefined ? link?.prefetch : true}
               className="px-6 py-2 rounded-lg text-white hover:bg-base-100 hover:text-black"
               title={link.label}
             >
