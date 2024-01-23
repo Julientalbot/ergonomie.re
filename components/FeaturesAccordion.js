@@ -67,7 +67,8 @@ const features = [
 // An SEO-friendly accordion component including the title and a description (when clicked.)
 const Item = ({ feature, isOpen, setFeatureSelected }) => {
   const accordion = useRef(null);
-  const { title, description, svg } = feature;
+  const { title, description } = feature;
+  // const { title, description, svg } = feature;
 
   return (
     <li>

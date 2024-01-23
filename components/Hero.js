@@ -1,6 +1,6 @@
 import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
-import Link from "next/link";
+// import Link from "next/link";
 import heroImage from "/public/home/hero.svg";
 import CTAButton from "./CTAButton";
 
