@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <head>
           <PlausibleProvider domain={config.domainName} />
           {/* D'autres éléments de <head> peuvent être ajoutés ici */}
-          <title>Next.js</title> {/* Titre ajouté - considérez si cela doit être ici ou géré différemment */}
+          <title>ergonomie.re</title> {/* Titre ajouté - considérez si cela doit être ici ou géré différemment */}
         </head>
       )}
       <body>
