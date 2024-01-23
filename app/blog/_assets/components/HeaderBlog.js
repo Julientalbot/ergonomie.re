@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -86,7 +85,7 @@ const ButtonPopoverCategories = () => {
   );
 };
 
-const ButtonAccordionCategories = () => {
+const ButtonAccordionCategories = ({ handleClose }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -121,6 +120,10 @@ const ButtonAccordionCategories = () => {
           {categories.map((category) => (
             <li key={category.slug}>
               <Link
+                onClick={() => {
+                  setIsOpen(false)
+                  if (handleClose) handleClose()
+                }}
                 href={`/blog/category/${category.slug}`}
                 className="text-white duration-100 link link-hover"
               >
@@ -138,13 +141,7 @@ const ButtonAccordionCategories = () => {
 // By default it shows the logo, the links, and the CTA.
 // In the links, there's a popover with the categories.
 const HeaderBlog = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
-
-  // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
-  useEffect(() => {
-    setIsOpen(false);
-  }, [searchParams]);
 
   return (
     <header className="bg-primary">
@@ -222,6 +219,7 @@ const HeaderBlog = () => {
             <Link
               className="flex items-center gap-2 shrink-0 "
               title={`${config.appName} hompage`}
+              onClick={() => setIsOpen(false)}
               href="/"
             >
               <Image
@@ -263,6 +261,7 @@ const HeaderBlog = () => {
               <div className="flex flex-col gap-y-4 items-start">
                 {links.map((link) => (
                   <Link
+                    onClick={() => setIsOpen(false)}
                     href={link.href}
                     key={link.href}
                     className="link link-hover"
@@ -271,7 +270,7 @@ const HeaderBlog = () => {
                     {link.label}
                   </Link>
                 ))}
-                <ButtonAccordionCategories />
+                <ButtonAccordionCategories handleClose={() => setIsOpen(false)} />
               </div>
             </div>
             <div className="divider"></div>
