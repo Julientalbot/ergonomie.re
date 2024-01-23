@@ -1,5 +1,8 @@
 import Image from "next/image";
-const article = ({ categories, slugs, authors, styles, author, category, categorySlugs, authorSlugs }) => ({
+import { categorySlugs } from "../categoriesAndAuthors/categories";
+import { authorSlugs } from "../categoriesAndAuthors/authors";
+
+export const articleSlugs = {
   // The unique slug to use in the URL. It's also used to generate the canonical URL.
   slug: "introducing-ergonomie",
   // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
@@ -7,12 +10,16 @@ const article = ({ categories, slugs, authors, styles, author, category, categor
   // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
   description:
     "Ergonomie.re a vocation à contribuer de façon significative à l'amélioration des conditions de travail des entreprises réunionnaises, en prenant en compte tant les dimensions relevant de la santé des personnes que de celles relevant de la performance globale et durable des entreprises.",
+
   // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
   categories: [
-    categories.find((category) => category.slug === categorySlugs.feature),
+    categorySlugs?.feature,
+    categorySlugs?.tutorial,
   ],
+
   // The author of the article. It's used to generate a link to the author's bio page.
-  author: authors.find((author) => author.slug === authorSlugs.julien),
+  author: authorSlugs?.julien,
+
   // The date of the article. It's used to generate the meta date.
   publishedAt: "2024-01-22",
   image: {
@@ -22,6 +29,14 @@ const article = ({ categories, slugs, authors, styles, author, category, categor
     urlRelative: "/blog/introducing-ergonomie.re/header.png",
     alt: "Image ergonomie.re",
   },
+}
+
+const article = ({ author, categories, styles }) => ({
+  // Default property to always share with content
+  ...articleSlugs, author, categories, styles,
+
+
+
   // The actual content of the article that will be shown under the <h1> title in the article page.
   content: (
     <>

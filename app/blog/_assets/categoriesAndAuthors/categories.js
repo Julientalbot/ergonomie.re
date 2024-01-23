@@ -1,6 +1,7 @@
-import slugs from "./slugs";
-
-const { categorySlugs } = slugs;
+export const categorySlugs = {
+  feature: "feature",
+  tutorial: "tutorial",
+};
 
 const categories = [
   {

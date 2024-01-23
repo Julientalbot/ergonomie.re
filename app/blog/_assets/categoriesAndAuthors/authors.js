@@ -1,4 +1,3 @@
-import slugs from "@/app/blog/_assets/categoriesAndAuthors/slugs";
 const socialIcons = {
   twitter: {
     name: "Twitter",
@@ -49,7 +48,9 @@ const socialIcons = {
   },
 };
 
-const { authorSlugs } = slugs
+export const authorSlugs = {
+  julien: "Julien"
+}
 
 const authors = [
   {
