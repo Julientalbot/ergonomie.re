@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import PlausibleProvider from "next-plausible";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
@@ -24,11 +25,14 @@ export default function RootLayout({ children }) {
       {config.domainName && (
         <head>
           <PlausibleProvider domain={config.domainName} />
+          {/* D'autres éléments de <head> peuvent être ajoutés ici */}
+          <title>Next.js</title> {/* Titre ajouté - considérez si cela doit être ici ou géré différemment */}
         </head>
       )}
       <body>
-        {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
+        {/* ClientLayout contient tous les wrappers clients (support chat Crisp, messages toast, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>
+        <SpeedInsights /> {/* Composant SpeedInsights ajouté */}
       </body>
     </html>
   );
