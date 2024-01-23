@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
 // import Link from "next/link";
-import heroImage from "/public/home/hero.svg";
+import heroImage from "/public/home/soudure-2.png";
 import CTAButton from "./CTAButton";
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
       <Image
         src={heroImage}
         alt="Description de la photo"
-        className=""
+        className="rounded-lg"
         priority={true}
         width={600}
         height={500}
