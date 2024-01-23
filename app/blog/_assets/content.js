@@ -1,15 +1,24 @@
-
+import categories, { categorySlugs } from "./categoriesAndAuthors/categories";
+import authors, { authorSlugs } from "./categoriesAndAuthors/authors";
 
 // These slugs are used to generate pages in the /blog/category/[categoryI].js. It's a way to group articles by category.
-const slugs = require("./categoriesAndAuthors/slugs").default;
+export const slugs = {
+  categorySlugs,
+  authorSlugs,
+};
+
+export {
+  categories,
+  authors
+}
 // ==================================================================================================================================================================
 // BLOG CATEGORIES 🏷️
 // ==================================================================================================================================================================
-export const categories = require("./categoriesAndAuthors/categories").default
+// export const categories = require("./categoriesAndAuthors/categories").default
 // ==================================================================================================================================================================
 // BLOG AUTHORS 📝
 // ==================================================================================================================================================================
-export const authors = require("./categoriesAndAuthors/authors").default;
+// export const authors = require("./categoriesAndAuthors/authors").default;
 
 // All the blog authors data display in the /blog/author/[authorId].js pages.
 
@@ -32,7 +41,17 @@ const styles = {
 
 // All the blog articles data display in the /blog/[articleId].js pages.
 export const articles = [
-  require("./articles/introducing-ergonomie.re"),  
+  require("./articles/introducing-ergonomie.re"),
 ].map((article) => {
-  return article.default({ categories, slugs, authors, styles, ...slugs })
+  const { articleSlugs } = article;
+
+  return article.default({
+    ...articleSlugs,
+
+    categories: categories?.filter((c) => articleSlugs?.categories?.includes(c?.slug)),
+    author: authors?.find((a) => articleSlugs?.author?.includes(a?.slug)),
+    styles,
+
+    // ...slugs,
+  })
 });
