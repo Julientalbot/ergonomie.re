@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,7 +17,7 @@ const links = [
 ];
 
 const cta = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
+  <ButtonSignin text="Optimisez votre entreprise" extraStyle="btn-primary md:btn-sm" />
 );
 
 const ButtonPopoverCategories = () => {
@@ -27,7 +26,7 @@ const ButtonPopoverCategories = () => {
       {({ open }) => (
         <>
           <Popover.Button
-            className="link no-underline flex flex-nowrap items-center gap-1 px-6 py-2 rounded-lg hover:bg-white hover:text-black text-white duration-100"
+            className="link no-underline flex flex-nowrap items-center gap-1 px-6 py-2 rounded-lg hover:bg-base-100 hover:text-black text-white duration-100"
             title="Open Blog categories"
           >
             Categories
@@ -35,9 +34,8 @@ const ButtonPopoverCategories = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className={`w-5 h-5 duration-200 ${
-                open ? "transform rotate-180 " : ""
-              }`}
+              className={`w-5 h-5 duration-200 ${open ? "transform rotate-180 " : ""
+                }`}
             >
               <path
                 fillRule="evenodd"
@@ -87,7 +85,7 @@ const ButtonPopoverCategories = () => {
   );
 };
 
-const ButtonAccordionCategories = () => {
+const ButtonAccordionCategories = ({ handleClose }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -106,9 +104,8 @@ const ButtonAccordionCategories = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className={`w-5 h-5 duration-200 ${
-            isOpen ? "transform rotate-180 " : ""
-          }`}
+          className={`w-5 h-5 duration-200 ${isOpen ? "transform rotate-180 " : ""
+            }`}
         >
           <path
             fillRule="evenodd"
@@ -123,6 +120,10 @@ const ButtonAccordionCategories = () => {
           {categories.map((category) => (
             <li key={category.slug}>
               <Link
+                onClick={() => {
+                  setIsOpen(false)
+                  if (handleClose) handleClose()
+                }}
                 href={`/blog/category/${category.slug}`}
                 className="text-white duration-100 link link-hover"
               >
@@ -140,16 +141,10 @@ const ButtonAccordionCategories = () => {
 // By default it shows the logo, the links, and the CTA.
 // In the links, there's a popover with the categories.
 const HeaderBlog = () => {
-  const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
 
-  // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
-  useEffect(() => {
-    setIsOpen(false);
-  }, [searchParams]);
-
   return (
-    <header className="bg-black">
+    <header className="bg-primary">
       <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
         {/* Your logo/name on large screens */}
         <div className="flex lg:flex-1">
@@ -200,7 +195,7 @@ const HeaderBlog = () => {
             <Link
               href={link.href}
               key={link.href}
-              className="px-6 py-2 rounded-lg text-white hover:bg-white hover:text-black"
+              className="px-6 py-2 rounded-lg text-white hover:bg-base-100 hover:text-black"
               title={link.label}
             >
               {link.label}
@@ -211,19 +206,20 @@ const HeaderBlog = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        {/* <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div> */}
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-3 overflow-y-auto bg-black text-white sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
+          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-3 overflow-y-auto bg-primary text-white sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
         >
           {/* Your logo/name on small screens */}
           <div className="flex items-center justify-between">
             <Link
               className="flex items-center gap-2 shrink-0 "
               title={`${config.appName} hompage`}
+              onClick={() => setIsOpen(false)}
               href="/"
             >
               <Image
@@ -265,6 +261,7 @@ const HeaderBlog = () => {
               <div className="flex flex-col gap-y-4 items-start">
                 {links.map((link) => (
                   <Link
+                    onClick={() => setIsOpen(false)}
                     href={link.href}
                     key={link.href}
                     className="link link-hover"
@@ -273,7 +270,7 @@ const HeaderBlog = () => {
                     {link.label}
                   </Link>
                 ))}
-                <ButtonAccordionCategories />
+                <ButtonAccordionCategories handleClose={() => setIsOpen(false)} />
               </div>
             </div>
             <div className="divider"></div>

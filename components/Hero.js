@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
-import Link from "next/link";
-import heroImage from "public/home/hero.svg";
+// import Link from "next/link";
+import heroImage from "/public/home/hero.svg";
 import CTAButton from "./CTAButton";
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="flex flex-col gap-4 xl:gap-8 items-center justify-center text-center xl:text-left xl:items-start">
         <h1 className="font-extrabold text-4xl xl:text-7xl tracking-tight">
           Rendre{" "}
-          <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-black text-white z-10 before:-z-10">
+          <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10">
             optimal
           </span>{" "}
           {"l'environnement de travail de vos équipes"}
@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <CTAButton className="text-white" />
+          <CTAButton className="text-white animate-ctaBlack" />
         </div>
 
         <TestimonialsAvatars priority={true} />

@@ -7,9 +7,11 @@ import Link from "next/link";
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
 
+import appInfos from "@/package.json"
+
 const Footer = () => {
   return (
-    <footer className="bg-black text-white border-t border-base-content/10">
+    <footer className="bg-primary text-white border-t border-base-content/10">
       <div className="max-w-7xl mx-auto px-8 py-24">
         <div className=" flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-full md:w-96 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -30,7 +32,7 @@ const Footer = () => {
 
             <p className="mt-3 text-sm">{config.appDescription}</p>
             <p className="mt-3 text-sm">
-              Copyright © {new Date().getFullYear()} - All rights reserved
+              Copyright © {new Date().getFullYear()} - All rights reserved - <span className="text-xs opacity-75">v{appInfos.version}</span>
             </p>
           </div>
           <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
@@ -73,7 +75,7 @@ const Footer = () => {
                 <Link
                   href="https://twitter.com/ergonomie_re"
                   target="_blank"
-                  className="p-1 rounded-lg bg-white"
+                  className="p-1 rounded-lg bg-base-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -90,21 +92,21 @@ const Footer = () => {
                 <Link
                   href="https://www.facebook.com/profile.php?id=100088132995870"
                   target="_blank"
-                  className="p-1 rounded-lg bg-white"
+                  className="p-1 rounded-lg bg-base-100"
                 >
                   <Facebook color="black" size={24} />
                 </Link>
                 <Link
                   href="https://www.instagram.com/julien.talbot.ergonomie/"
                   target="_blank"
-                  className="p-1 rounded-lg bg-white"
+                  className="p-1 rounded-lg bg-base-100"
                 >
                   <Instagram color="black" size={24} />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/julien-talbot-ergonome/"
                   target="_blank"
-                  className="p-1 rounded-lg bg-white"
+                  className="p-1 rounded-lg bg-base-100"
                 >
                   <Linkedin color="black" size={24} />
                 </Link>

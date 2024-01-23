@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
             height: 660,
           },
         ],
-        locale: "en_US",
+        locale: "fr_FR",
         type: "website",
       },
     },
@@ -92,7 +92,7 @@ export default async function Article({ params }) {
               clipRule="evenodd"
             />
           </svg>
-          Back to Blog
+          Retour au blog
         </Link>
       </div>
 
@@ -108,7 +108,7 @@ export default async function Article({ params }) {
               />
             ))}
             <span className="text-base-content/80" itemProp="datePublished">
-              {new Date(article.publishedAt).toLocaleDateString("en-US", {
+              {new Date(article.publishedAt).toLocaleDateString("fr-FR", {
                 month: "long",
                 day: "numeric",
                 year: "numeric",

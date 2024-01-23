@@ -24,6 +24,7 @@ const CardArticle = ({
           <figure>
             <Image
               src={article.image.src}
+              blurDataURL={article.image.src}
               alt={article.image.alt}
               width={600}
               height={338}
@@ -65,7 +66,8 @@ const CardArticle = ({
             <Avatar article={article} />
 
             <span itemProp="datePublished">
-              {new Date(article.publishedAt).toLocaleDateString("en-US", {
+              {new Date(article.publishedAt).toLocaleDateString("fr-FR", {
+                year: "numeric",
                 month: "long",
                 day: "numeric",
               })}
