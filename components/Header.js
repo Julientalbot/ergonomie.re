@@ -1,10 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import CTAButton from "./CTAButton";
@@ -25,7 +23,6 @@ const links = [
   {
     href: "/blog",
     label: "Blog",
-    prefetch: false
   },
 ];
 
@@ -39,14 +36,9 @@ const cta = (
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
 // The header is responsive, and on mobile, the links are hidden behind a burger button.
 const Header = () => {
-  const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
 
   // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
-  useEffect(() => {
-    setIsOpen(false);
-  }, [searchParams]);
-
   return (
     <header className="bg-primary text-white">
       <nav
@@ -103,7 +95,6 @@ const Header = () => {
             <Link
               href={link.href}
               key={link.href}
-              prefetch={link?.prefetch !== undefined ? link?.prefetch : true}
               className="px-6 py-2 rounded-lg hover:bg-base-100 hover:text-black"
               title={link.label}
             >
@@ -167,6 +158,7 @@ const Header = () => {
               <div className="flex flex-col gap-y-4 items-center">
                 {links.map((link) => (
                   <Link
+                    onClick={() => setIsOpen(false)}
                     href={link.href}
                     key={link.href}
                     className="link link-hover"
