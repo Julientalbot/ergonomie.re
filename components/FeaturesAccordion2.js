@@ -12,9 +12,9 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Santé",
+    title: "Intervention ergonomique complète pour tous les budgets",
     description:
-      "Diminuer le turn-over, les arrêts maladies récurrents",
+      "Notre approche holistique améliore la santé et la performance sans compromis, avec des options adaptées à tous les budgets. Découvrez une ergonomie qui s'aligne avec votre réalité économique et s'enrichit de technologie de pointe pour des résultats durables.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",

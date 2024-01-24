@@ -46,27 +46,33 @@ const Problem = () => {
     <section className="scroll-mt-8" id="pourquoi">
       <div className="max-w-7xl mx-auto px-4 py-16 text-center">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          {"46% de productivité en moins à cause d'une ergonomie inadaptée"}
+          {"chaque situation de travail problématique vous draine"}{" "} 
+          <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
+          {/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
+          plus de 13340€
+          </span>{" "}
+          par an et par salarié*
         </h2>
-        <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
+        <p className="opacity-60 mb-4">
           {
-            "Des conditions de travail inadéquates entraînent des coûts cachés énormes : baisse de productivité, absentéisme, rotation du personnel…"
+            "*selon le Baromètre IBET 2011"
           }
         </p>
-
+        <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
+          {
+            "coûts de gestion des remplacements, d'image de l'entreprise, d'interruption de l'activité, de baisse qualitative et quantitative de la production ..."
+          }
+        </p>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
-          <Step
-            emoji="📉"
-            text="Réduction significative de la productivité"
-          />
+          <Step emoji="🛠️" text="Peu ou pas d'optimisation ergonomique" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="🤕" text="Augmentation des arrêts maladie" />
+          <Step emoji="🤕" text="Augmentation de l'absentéisme et des coûts associés" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="💸" text="Coûts croissants en santé et recrutement" />
+          <Step emoji="📉" text="Dégradation de la performance économique" />
         </div>
         <div className="flex justify-center">
           <CTAButton className="text-white animate-ctaBlack" />

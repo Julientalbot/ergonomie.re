@@ -16,7 +16,7 @@ const CTAButton = ({ className }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      Planifier un rendez-vous
+      Optimiser mon entreprise
     </Link>
   );
 };

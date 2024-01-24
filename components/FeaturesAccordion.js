@@ -158,8 +158,7 @@ const FeaturesAccordion = () => {
     <section className="px-2 py-6 max-w-7xl mx-auto" id="comment">
       <div className="">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-8 text-center">
-          Comment je peux
-          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+        Optimisez chaque dimension de votre espace de travail          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             vous aider
           </span>
         </h2>
