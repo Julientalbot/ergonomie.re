@@ -12,9 +12,9 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Intervention ergonomique complète pour tous les budgets",
+    title: "Approche intégrative santé - performance",
     description:
-      "Notre approche holistique améliore la santé et la performance sans compromis, avec des options adaptées à tous les budgets. Découvrez une ergonomie qui s'aligne avec votre réalité économique et s'enrichit de technologie de pointe pour des résultats durables.",
+      "Ne sacrifiez ni la santé ni la performance : notre stratégie ergonomique optimise les deux simultanément. Découvrez comment notre approche améliore le bien-être des employés et booste la productivité, transformant les coûts de santé en investissements rentables pour votre entreprise.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",
@@ -35,9 +35,9 @@ const features = [
     ),
   },
   {
-    title: "Performance",
+    title: "Conseils stratégiques ancrés dans la réalité économique",
     description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+      "Recevez des conseils ergonomiques qui s'intègrent naturellement dans le tissu économique de votre entreprise. Nous combinons l'expertise en ergonomie avec une compréhension approfondie de votre modèle économique pour des solutions réalistes et rentables qui respectent vos capacités et aspirations.",
     type: "image",
     path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
     alt: "A computer",
@@ -59,9 +59,9 @@ const features = [
     ),
   },
   {
-    title: "Productivité",
+    title: "Méthodologie localisée et innovante",
     description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
+      "Exploitez notre méthodologie unique, adaptée aux nuances du marché de la Réunion. En tirant parti des dernières innovations technologiques, nous proposons des interventions ergonomiques personnalisées qui s'alignent avec les spécificités de votre environnement de travail local.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +80,30 @@ const features = [
     ),
   },
   {
-    title: "Sécurité",
+    title: "Solutions accessibles et participatives",
     description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
+      "Engagez chaque membre de votre équipe avec nos solutions ergonomiques participatives. Accessibles à toutes les bourses, elles sont conçues pour impliquer activement vos employés, assurant ainsi un environnement de travail optimal et une adoption durable des bonnes pratiques.",
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Support complet et communication transparente",
+    description:
+      "Avec ergonomie.re, bénéficiez d'un support complet et d'une communication transparente. Accédez à un espace client dédié, riche en ressources et en documentation, pour un suivi clair et continu de nos interventions. Transformez les principes ergonomiques en une partie intégrante de la culture de votre entreprise.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
