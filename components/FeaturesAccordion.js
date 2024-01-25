@@ -162,7 +162,7 @@ const FeaturesAccordion = () => {
         <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
         les performances
           </span>
-          de l'entreprise
+          {"de l'entreprise"}
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="flex flex-col items-center justify-center gap-8 sm:gap-12 lg:flex-row">
