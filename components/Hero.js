@@ -9,11 +9,11 @@ const Hero = () => {
     <section className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-16 p-2 pt-12 mb-6">
       <div className="flex flex-col gap-4 xl:gap-8 items-center justify-center text-center xl:text-left xl:items-start">
         <h1 className="font-extrabold text-4xl xl:text-7xl tracking-tight">
-          l'absence d'optimisation {" "}
+          {"l'absence d'optimisation"}
           <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
           {/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
           vous coûte cher
-          </span>{" "}
+          </span>
           {/* {" à votre entreprise "} */}
         </h1>
         <div className="text-lg opacity-80 leading-relaxed flex flex-col gap-2">
