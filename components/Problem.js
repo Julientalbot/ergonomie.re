@@ -44,7 +44,7 @@ const Step = ({ emoji, text }) => {
 const Problem = () => {
   return (
     <section className="scroll-mt-8" id="pourquoi">
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center bg-base-200 rounded-lg">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           {"chaque situation de travail problématique vous draine"}{" "} 
           <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">

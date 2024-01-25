@@ -158,9 +158,11 @@ const FeaturesAccordion = () => {
     <section className="px-2 py-6 max-w-7xl mx-auto" id="comment">
       <div className="">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-8 text-center">
-        Optimisez chaque dimension de votre espace de travail          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            vous aider
+        Conserver la santé des individus et augmenter
+        <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+        les performances
           </span>
+          de l'entreprise
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="flex flex-col items-center justify-center gap-8 sm:gap-12 lg:flex-row">

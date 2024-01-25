@@ -11,6 +11,27 @@ import Image from "next/image";
 // - format: The format of the media (if type is 'video')
 // - alt: The alt text of the image (if type is 'image')
 const features = [
+  // {
+    // title: "Diagnostic ergonomique pris en charge à 70% par la CGSS",
+    // description:
+      // "Parce que je suis référencé en tant qu'Intervenant en Prévention des Risques Professionnels auprès de la DEETS et que mes interventions sont conformes à la démarche de l’ED 860 de l’INRS, mes diagnostics ergonomiques sont pris en charge à 70% par la CGSS. Je vous accompagne entièrement dans la demande de subvention.",
+    // svg: (
+      // <svg
+        // xmlns="http://www.w3.org/2000/svg"
+        // fill="none"
+        // viewBox="0 0 24 24"
+        // strokeWidth={1.5}
+        // stroke="currentColor"
+        // className="w-6 h-6"
+      // >
+        // <path
+          // strokeLinecap="round"
+          // strokeLinejoin="round"
+          // d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+        // />
+      // </svg>
+    // ),
+  // },
   {
     title: "Approche intégrative santé - performance",
     description:
@@ -40,7 +61,7 @@ const features = [
       "Recevez des conseils ergonomiques qui s'intègrent naturellement dans le tissu économique de votre entreprise. Nous combinons l'expertise en ergonomie avec une compréhension approfondie de votre modèle économique pour des solutions réalistes et rentables qui respectent vos capacités et aspirations.",
     type: "image",
     path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "A computer",
+    alt: "Un graphique",
     svg: (
       <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 4.5V19c0 .6.4 1 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.2M20 9v3.2"/>
@@ -64,7 +85,7 @@ const features = [
   {
     title: "Méthodologie localisée et innovante",
     description:
-      "Exploitez notre méthodologie unique, adaptée aux nuances du marché de la Réunion. En tirant parti des dernières innovations technologiques, nous proposons des interventions ergonomiques personnalisées qui s'alignent avec les spécificités de votre environnement de travail local.",
+      "Parce que je développe une compréhension du tissu économique réunionnais en étant à la CPME et au MEDEF [...] Exploitez notre méthodologie unique, adaptée aux nuances du marché de la Réunion. En tirant parti des dernières innovations technologiques, nous proposons des interventions ergonomiques personnalisées qui s'alignent avec les spécificités de votre environnement de travail local.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -215,14 +236,14 @@ const FeaturesAccordion = () => {
 
   return (
     <section 
-      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 "
+      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto"
       id="comment"
     >
       <div className="px-8">
-        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          Le consultant dont vous avez besoin pour
+        <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
+          les conséquences peuvent être
           <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            propulser votre entreprise
+            nombreuses
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">

@@ -1,6 +1,6 @@
 import HeaderBlog from "./_assets/components/HeaderBlog";
 import Footer from "@/components/Footer";
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 
 export default async function LayoutBlog({ children }) {
   return (
@@ -11,7 +11,7 @@ export default async function LayoutBlog({ children }) {
 
       <div className="h-24" />
 
-      <Analytics />
+      {/* <Analytics /> */}
 
       <Footer />
     </div>
