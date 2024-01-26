@@ -11,116 +11,132 @@ import Image from "next/image";
 // - format: The format of the media (if type is 'video')
 // - alt: The alt text of the image (if type is 'image')
 const features = [
-  { // mentionner les solutions aux problématiques suivantes : santé, performance, rentabilité, culture et engagement, adaptation et innovation
-    // + problématiques du dirigeant : pas le temps, tête dans le guidon, absence de recul sur la situation, 
-    title: "Optimisez simultanément la santé et la performance", // #santé, #performance, #rentabilité
+  { 
+    title: "Santé et sécurité au premier plan",
     description:
-      "Notre approche va au-delà des attentes traditionnelles. Elle englobe les aspects physiques, spatiaux, organisationnels et économiques de l'entreprise pour offrir une solution complète. En analysant et en optimisant ces différentes dimensions, nous créons un équilibre parfait entre la santé et la performance, tout en respectant la structure économique et les spécificités de votre entreprise à la Réunion. Cette approche globale garantit des améliorations significatives dans le bien-être des employés et une augmentation mesurable de la productivité et de la rentabilité.",
-    type: "video",
-    path: "public/home/soudure.mp4",
-    format: "video/mp4",
+    "Transformez votre lieu de travail avec des solutions ergonomiques qui réduisent drastiquement les accidents et maladies professionnels. Nous vous aidons à instaurer un environnement sain, réduisant l'absentéisme et boostant la productivité.",
+    type: "image",
+    path: "/home/santé.png",
+    format: "image/png",
     svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-        />
-      </svg>
+<svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"/>
+  </svg>
+      // <svg
+        // xmlns="http://www.w3.org/2000/svg"
+        // fill="none"
+        // viewBox="0 0 24 24"
+        // strokeWidth={1.5}
+        // stroke="currentColor"
+        // className="w-6 h-6"
+      // >
+        // {/* <path */}
+          // strokeLinecap="round"
+          // d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+        // />
+      // {/* </svg> */}
     ),
   },
-  {    title: "Optimisez simultanément la santé et la performance", // #culture et engagement
+  {    title: "Performance et efficacité réinventées",
   description:
-    "Notre approche va au-delà des attentes traditionnelles. Elle englobe les aspects physiques, spatiaux, organisationnels et économiques de l'entreprise pour offrir une solution complète. En analysant et en optimisant ces différentes dimensions, nous créons un équilibre parfait entre la santé et la performance, tout en respectant la structure économique et les spécificités de votre entreprise à la Réunion. Cette approche globale garantit des améliorations significatives dans le bien-être des employés et une augmentation mesurable de la productivité et de la rentabilité.",
-  type: "video",
-  path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-  format: "video/webm",
+    "Optimisez la productivité grâce à des flux de travail ergonomiquement améliorés. Nos interventions ciblées propulsent la qualité et l'efficacité opérationnelle, plaçant votre entreprise sur la voie de la réussite continue.",
+    type: "image",
+    path: "/home/performance.png",
+    format: "image/png",
   svg: (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-      />
-    </svg>
+    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 4.5V19c0 .6.4 1 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.2M20 9v3.2"/>
+  </svg>
+    // <svg
+    //   xmlns="http://www.w3.org/2000/svg"
+    //   fill="none"
+    //   viewBox="0 0 24 24"
+    //   strokeWidth={1.5}
+    //   stroke="currentColor"
+    //   className="w-6 h-6"
+    // >
+    //   <path
+    //     strokeLinecap="round"
+    //     d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+    //   />
+    // </svg>
   ),
   },
-  {    title: "Optimisez simultanément la santé et la performance", // #adaptation et innovation 
+  {    title: "Minimisez vos coûts et maximisez votre rentabilité", 
   description:
-    "Notre approche va au-delà des attentes traditionnelles. Elle englobe les aspects physiques, spatiaux, organisationnels et économiques de l'entreprise pour offrir une solution complète. En analysant et en optimisant ces différentes dimensions, nous créons un équilibre parfait entre la santé et la performance, tout en respectant la structure économique et les spécificités de votre entreprise à la Réunion. Cette approche globale garantit des améliorations significatives dans le bien-être des employés et une augmentation mesurable de la productivité et de la rentabilité.",
-  type: "video",
-  path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-  format: "video/webm",
+    "Éliminez les coûts cachés liés à une mauvaise ergonomie. Nos stratégies ergonomiques intelligentes réduisent les dépenses superflues et augmentent la rentabilité, solidifiant la santé financière de votre entreprise.",
+    type: "image",
+    path: "/home/rentabilité.png",
+    format: "image/png",
   svg: (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-      />
-    </svg>
+<svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 10h9.2M6 14h9.2M18 5a6 6 0 0 0-3.4-1C11 4 7.8 7.6 7.8 12s3 8 6.8 8a6 6 0 0 0 3.4-1"/>
+  </svg>    // <svg
+    //   xmlns="http://www.w3.org/2000/svg"
+    //   fill="none"
+    //   viewBox="0 0 24 24"
+    //   strokeWidth={1.5}
+    //   stroke="currentColor"
+    //   className="w-6 h-6"
+    // >
+    //   <path
+    //     strokeLinecap="round"
+    //     d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+    //   />
+    // </svg>
   ),
   },
   {
-    title: "Innovation technologique et accompagnement personnalisé",
+    title: "Créez une culture d'entreprise qui attire et garde les talents",
     description:
-      "Intégrez l'ergonomie du futur avec notre usage de technologies avancées comme l'intelligence artificielle pour des diagnostics précis et des solutions personnalisées. Profitez également d'un accès exclusif à un espace client en ligne pendant toute la durée de notre intervention, offrant des ressources riches, des suivis de projet et des avantages supplémentaires pour une expérience client transparente et enrichissante.",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
+      "Forgez une culture d'entreprise qui valorise et engage chaque employé. En se concentrant sur le bien-être, nous aidons à attirer et retenir les talents, renforçant ainsi la dynamique interne et l'attractivité externe.",
+      type: "image",
+      path: "/home/coopération.png",
+      format: "image/png",
     svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-        />
-      </svg>
+<svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3a2.5 2.5 0 1 1 2-4.5M19.5 17h.5c.6 0 1-.4 1-1a3 3 0 0 0-3-3h-1m0-3a2.5 2.5 0 1 0-2-4.5m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3c0 .6-.4 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
+  </svg>
+      // <svg
+      //   xmlns="http://www.w3.org/2000/svg"
+      //   fill="none"
+      //   viewBox="0 0 24 24"
+      //   strokeWidth={1.5}
+      //   stroke="currentColor"
+      //   className="w-6 h-6"
+      // >
+      //   <path
+      //     strokeLinecap="round"
+      //     d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+      //   />
+      // </svg>
     ),
   },
   {
-    title: "Diagnostics et interventions sur-mesure",
+    title: "Pionnier de l'innovation ergonomique",
     description:
-      "Parce que je suis à la CPME et au courant [...] Nous comprenons que chaque entreprise est unique. C'est pourquoi nous proposons des solutions ergonomiques flexibles et adaptées à tous les budgets. Que ce soit pour une petite start-up ou une grande entreprise, nos services sont conçus pour répondre spécifiquement à vos défis et à vos capacités financières, garantissant une amélioration continue sans surcharger votre entreprise.",
+    "Soyez à l'avant-garde avec des pratiques ergonomiques novatrices. Nous vous équipons pour embrasser le changement et stimuler l'innovation, assurant à votre entreprise de rester compétitive dans un monde en constante évolution.",
+    type: "image",
+    path: "/home/innovation.png",
+    format: "image/png",
     svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
+      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+  </svg>
+      // <svg
+      //   xmlns="http://www.w3.org/2000/svg"
+      //   fill="none"
+      //   viewBox="0 0 24 24"
+      //   strokeWidth={1.5}
+      //   stroke="currentColor"
+      //   className="w-6 h-6"
+      // >
+      //   <path
+      //     strokeLinecap="round"
+      //     strokeLinejoin="round"
+      //     d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+      //   />
+      // </svg>
     ),
   },
 ];

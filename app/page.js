@@ -13,7 +13,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 // import Test from "@/components/Test"
 
-// Proposition de plan simple : (OK) Hero - (OK) Problem agitation - Solution - Résultats et preuves sociales - CTA - Méthodologie - About - FAQ
+// Proposition de plan simple : (OK) Hero - (OK) Problem agitation - OK Solution - Résultats et preuves sociales - CTA - (EN COURS) Méthodologie - About - FAQ
 
 export default function Home() {
   return (
@@ -22,10 +22,8 @@ export default function Home() {
       <main>
         <Hero />
         <Problem /> {/* Agitation du problème = listing précis des effets de l'absence d'ergonomie. */}
-        {/* <Problem2 /> méthodologie détaillée et éléments différençiants par rapport à la concurrence */}
-        {/* <FeaturesAccordion /> */}
         <FeaturesAccordion2 /> {/*à créer. Présentation de la solution et de ses bénéfices. Equivalent de : "vous utilisez telle méthode, c'est l'ancienne, voilà avec ma méthode ce qu'on pourrait avoir."*/}
-        <FeaturesListicle /> {/*méthodologie détaillée et éléments différençiants par rapport à la concurrence*/}
+        {/* <FeaturesListicle /> méthodologie détaillée et éléments différençiants par rapport à la concurrence */}
         <Testimonials3 />
         <CalEmbed />
         <About />
