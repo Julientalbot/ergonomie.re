@@ -55,24 +55,34 @@ const Problem = () => {
         </h2>
         <p className="opacity-60 mb-4">
           {
-            "*selon le Baromètre IBET 2011"
+            "*selon le Baromètre IBET 2016"
           }
         </p>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
           {
-            "coûts de gestion des remplacements, d'image de l'entreprise, d'interruption de l'activité, de baisse qualitative et quantitative de la production ..."
+            "augmentation du turnover dû à des conditions de travail inadéquates, inefficacité des flux de travail réduisant la qualité des outputs, surcoûts liés à la gestion inefficace des ressources humaines, baisse de la satisfaction au travail impactant la rétention des talents, difficultés d'implémentation de pratiques ergonomiques innovantes."
           }
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
-          <Step emoji="🛠️" text="Peu ou pas d'optimisation ergonomique" />
+  
+          <Step emoji="🤕" text="Augmentation des arrêts de travail" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="🤕" text="Augmentation de l'absentéisme et des coûts associés" />
+          <Step emoji="😩" text="Inefficacité des flux et processus" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="📉" text="Dégradation de la performance économique" />
+          <Step emoji="💰" text="Surcoûts liés à la gestion des ressources humaines" />
+
+          <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
+
+          <Step emoji="😔" text="Diminution de la satisfaction au travail" />
+
+          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
+
+          <Step emoji="🤔" text="Incapacité à innover et rester compétitif" />
+
         </div>
         <div className="flex justify-center">
           <CTAButton className="text-white animate-ctaBlack" />
@@ -83,3 +93,34 @@ const Problem = () => {
 };
 
 export default Problem;
+
+{/* <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12"> */}
+{/*  */}
+// Élément de départ
+{/* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */}
+{/*  */}
+// Trois flèches pointant vers la droite
+{/* <div className="flex flex-col items-center justify-between h-full"> */}
+  {/* <Arrow extraStyle="md:rotate-90" /> */}
+  {/* <Arrow extraStyle="md:rotate-90" /> */}
+  {/* <Arrow extraStyle="md:rotate-90" /> */}
+{/* </div> */}
+{/*  */}
+// Trois éléments alignés verticalement
+{/* <div className="flex flex-col items-center gap-6"> */}
+  {/* <Step emoji="🤕" text="Accidents et arrêts maladie en hausse" /> */}
+  {/* <Step emoji="📉" text="Dégradation de la performance économique" /> */}
+  {/* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */}
+{/* </div> */}
+{/*  */}
+// Trois flèches convergentes
+{/* <div className="flex flex-col items-center justify-between h-full"> */}
+  {/* <Arrow extraStyle="md:rotate-90" /> */}
+  {/* <Arrow extraStyle="md:rotate-90" /> */}
+  {/* <Arrow extraStyle="md:rotate-90" /> */}
+{/* </div> */}
+{/*  */}
+// Élément final
+{/* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */}
+{/*  */}
+{/* </div> */}

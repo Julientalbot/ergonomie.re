@@ -9,31 +9,20 @@ const Hero = () => {
     <section className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-16 p-2 pt-12 mb-6">
       <div className="flex flex-col gap-4 xl:gap-8 items-center justify-center text-center xl:text-left xl:items-start">
         <h1 className="font-extrabold text-4xl xl:text-7xl tracking-tight">
-          {"le manque d'ergonomie "}
+          {"le manque d'ergonomie vous "}
           <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10"
-          >
-          {/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
-          vous coûte cher
+          >{/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
+          coûte cher
           </span>
-          {/* {" à votre entreprise "} */}
         </h1>
         <div className="text-lg opacity-80 leading-relaxed flex flex-col gap-2">
-          <p>
-            {
-              "augmentation des arrêts maladies, des accidents de travail, de l'absentéisme & dégradation de la motivation, de l'innovation, de la productivité, de la qualité, de la rentabilité ..."
-            }
-          </p>
-          <p>
-            {
-              "la liste est longue"
-            }
-          </p>
-          <p>
-            {
-              "nous vous aidons à la réduire"
-              //  en vous accompagnant dans l'optimisation des conditions de travail pour préserver la santé des individus et augmenter la performance globale de l'entreprise"
-            }
-          </p>
+        <ul className="list-disc pl-5">
+  <li>hausse significative des accidents et arrêts de travail,</li>
+  <li>baisse de la performance et de l'efficacité opérationnelle,</li>
+  <li>augmentation des coûts opérationnels et baisse de la rentabilité,</li>
+  <li>diminution de l'engagement des employés et dégradation de la culture d'entreprise,</li>
+  <li>manque d'adaptabilité et de capacité d'innovation face aux défis ergonomiques ...</li>
+</ul>
         </div>
         <div className="flex gap-2">
           <CTAButton className="text-white animate-ctaBlack" />

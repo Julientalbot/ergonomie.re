@@ -11,31 +11,78 @@ import Image from "next/image";
 // - format: The format of the media (if type is 'video')
 // - alt: The alt text of the image (if type is 'image')
 const features = [
-  // {
-    // title: "Diagnostic ergonomique pris en charge à 70% par la CGSS",
-    // description:
-      // "Parce que je suis référencé en tant qu'Intervenant en Prévention des Risques Professionnels auprès de la DEETS et que mes interventions sont conformes à la démarche de l’ED 860 de l’INRS, mes diagnostics ergonomiques sont pris en charge à 70% par la CGSS. Je vous accompagne entièrement dans la demande de subvention.",
-    // svg: (
-      // <svg
-        // xmlns="http://www.w3.org/2000/svg"
-        // fill="none"
-        // viewBox="0 0 24 24"
-        // strokeWidth={1.5}
-        // stroke="currentColor"
-        // className="w-6 h-6"
-      // >
-        // <path
-          // strokeLinecap="round"
-          // strokeLinejoin="round"
-          // d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-        // />
-      // </svg>
-    // ),
-  // },
-  {
-    title: "Approche intégrative santé - performance",
+  { // mentionner les solutions aux problématiques suivantes : santé, performance, rentabilité, culture et engagement, adaptation et innovation
+    // + problématiques du dirigeant : pas le temps, tête dans le guidon, absence de recul sur la situation, 
+    title: "Optimisez simultanément la santé et la performance", // #santé, #performance, #rentabilité
     description:
-      "Ne sacrifiez ni la santé ni la performance : notre stratégie ergonomique optimise les deux simultanément. Découvrez comment notre approche améliore le bien-être des employés et booste la productivité, transformant les coûts de santé en investissements rentables pour votre entreprise.",
+      "Notre approche va au-delà des attentes traditionnelles. Elle englobe les aspects physiques, spatiaux, organisationnels et économiques de l'entreprise pour offrir une solution complète. En analysant et en optimisant ces différentes dimensions, nous créons un équilibre parfait entre la santé et la performance, tout en respectant la structure économique et les spécificités de votre entreprise à la Réunion. Cette approche globale garantit des améliorations significatives dans le bien-être des employés et une augmentation mesurable de la productivité et de la rentabilité.",
+    type: "video",
+    path: "public/home/soudure.mp4",
+    format: "video/mp4",
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+        />
+      </svg>
+    ),
+  },
+  {    title: "Optimisez simultanément la santé et la performance", // #culture et engagement
+  description:
+    "Notre approche va au-delà des attentes traditionnelles. Elle englobe les aspects physiques, spatiaux, organisationnels et économiques de l'entreprise pour offrir une solution complète. En analysant et en optimisant ces différentes dimensions, nous créons un équilibre parfait entre la santé et la performance, tout en respectant la structure économique et les spécificités de votre entreprise à la Réunion. Cette approche globale garantit des améliorations significatives dans le bien-être des employés et une augmentation mesurable de la productivité et de la rentabilité.",
+  type: "video",
+  path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
+  format: "video/webm",
+  svg: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+      />
+    </svg>
+  ),
+  },
+  {    title: "Optimisez simultanément la santé et la performance", // #adaptation et innovation 
+  description:
+    "Notre approche va au-delà des attentes traditionnelles. Elle englobe les aspects physiques, spatiaux, organisationnels et économiques de l'entreprise pour offrir une solution complète. En analysant et en optimisant ces différentes dimensions, nous créons un équilibre parfait entre la santé et la performance, tout en respectant la structure économique et les spécificités de votre entreprise à la Réunion. Cette approche globale garantit des améliorations significatives dans le bien-être des employés et une augmentation mesurable de la productivité et de la rentabilité.",
+  type: "video",
+  path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
+  format: "video/webm",
+  svg: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+      />
+    </svg>
+  ),
+  },
+  {
+    title: "Innovation technologique et accompagnement personnalisé",
+    description:
+      "Intégrez l'ergonomie du futur avec notre usage de technologies avancées comme l'intelligence artificielle pour des diagnostics précis et des solutions personnalisées. Profitez également d'un accès exclusif à un espace client en ligne pendant toute la durée de notre intervention, offrant des ressources riches, des suivis de projet et des avantages supplémentaires pour une expérience client transparente et enrichissante.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",
@@ -56,36 +103,9 @@ const features = [
     ),
   },
   {
-    title: "Conseils stratégiques ancrés dans la réalité économique",
+    title: "Diagnostics et interventions sur-mesure",
     description:
-      "Recevez des conseils ergonomiques qui s'intègrent naturellement dans le tissu économique de votre entreprise. Nous combinons l'expertise en ergonomie avec une compréhension approfondie de votre modèle économique pour des solutions réalistes et rentables qui respectent vos capacités et aspirations.",
-    type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "Un graphique",
-    svg: (
-      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 4.5V19c0 .6.4 1 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.2M20 9v3.2"/>
-  </svg>
-      // <svg
-      //   xmlns="http://www.w3.org/2000/svg"
-      //   fill="none"
-      //   viewBox="0 0 24 24"
-      //   strokeWidth={1.5}
-      //   stroke="currentColor"
-      //   className="w-6 h-6"
-      // >
-      //   <path
-      //     strokeLinecap="round"
-      //     strokeLinejoin="round"
-      //     d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
-      //   />
-      // </svg>
-    ),
-  },
-  {
-    title: "Méthodologie localisée et innovante",
-    description:
-      "Parce que je développe une compréhension du tissu économique réunionnais en étant à la CPME et au MEDEF [...] Exploitez notre méthodologie unique, adaptée aux nuances du marché de la Réunion. En tirant parti des dernières innovations technologiques, nous proposons des interventions ergonomiques personnalisées qui s'alignent avec les spécificités de votre environnement de travail local.",
+      "Parce que je suis à la CPME et au courant [...] Nous comprenons que chaque entreprise est unique. C'est pourquoi nous proposons des solutions ergonomiques flexibles et adaptées à tous les budgets. Que ce soit pour une petite start-up ou une grande entreprise, nos services sont conçus pour répondre spécifiquement à vos défis et à vos capacités financières, garantissant une amélioration continue sans surcharger votre entreprise.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -99,48 +119,6 @@ const features = [
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Solutions accessibles et participatives",
-    description:
-      "Engagez chaque membre de votre équipe avec nos solutions ergonomiques participatives. Accessibles à toutes les bourses, elles sont conçues pour impliquer activement vos employés, assurant ainsi un environnement de travail optimal et une adoption durable des bonnes pratiques.",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Support complet et communication transparente",
-    description:
-      "Avec ergonomie.re, bénéficiez d'un support complet et d'une communication transparente. Accédez à un espace client dédié, riche en ressources et en documentation, pour un suivi clair et continu de nos interventions. Transformez les principes ergonomiques en une partie intégrante de la culture de votre entreprise.",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
         />
       </svg>
     ),
@@ -241,12 +219,12 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          les conséquences peuvent être
+          transformez les défis ergonomiques en
           <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            nombreuses
+            avantages stratégiques
           </span>
         </h2>
-        <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
             <ul className="w-full">
               {features.map((feature, i) => (
@@ -259,7 +237,6 @@ const FeaturesAccordion = () => {
                 />
               ))}
             </ul>
-
             <Media feature={features[featureSelected]} key={featureSelected} />
           </div>
         </div>
@@ -270,3 +247,36 @@ const FeaturesAccordion = () => {
 
 export default FeaturesAccordion;
 
+//Pour inverser l'ordre :
+{/* <section  */}
+      // className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto"
+      // id="comment"
+    // >
+      {/* <div className="px-8"> */}
+        {/* <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8"> */}
+          {/* transformez les défis ergonomiques en */}
+          {/* <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap"> */}
+            {/* avantages stratégiques */}
+          {/* </span> */}
+        {/* </h2> */}
+        {/* <div className="flex flex-col md:flex-row gap-12 md:gap-24"> */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-8 sm:gap-12 lg:gap-20"> */}
+            {/* <ul className="w-full md:order-2"> */}
+              {/* {features.map((feature, i) => ( */}
+                // <Item
+                  // key={feature.title}
+                  // index={i}
+                  // feature={feature}
+                  // isOpen={featureSelected === i}
+                  // setFeatureSelected={() => setFeatureSelected(i)}
+                // />
+              // ))}
+            {/* </ul> */}
+{/*  */}
+            {/* <div className="md:order-1"> */}
+              {/* <Media feature={features[featureSelected]} key={featureSelected} /> */}
+            {/* </div> */}
+          {/* </div> */}
+        {/* </div> */}
+      {/* </div> */}
+    {/* </section> */}
