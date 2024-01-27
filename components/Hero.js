@@ -17,11 +17,11 @@ const Hero = () => {
         </h1>
         <div className="text-lg opacity-80 leading-relaxed flex flex-col gap-2">
         <ul className="list-disc pl-5">
-  <li>hausse significative des accidents et arrêts de travail,</li>
-  <li>{"baisse de la performance et de l'efficacité opérationnelle,"}</li>
-  <li>augmentation des coûts opérationnels et baisse de la rentabilité,</li>
-  <li>{"diminution de l'engagement des employés et dégradation de la culture d'entreprise,"}</li>
-  <li>{"manque d'adaptabilité et de capacité d'innovation face aux défis ergonomiques ..."}</li>
+  <li>hausse des accidents et arrêts de travail</li>
+  <li>{"baisse de l'efficacité opérationnelle,"}</li>
+  <li>augmentation des coûts,</li>
+  <li>{"diminution de l'engagement des employés,"}</li>
+  <li>{"incapacité à innover ..."}</li>
 </ul>
         </div>
         <div className="flex gap-2">

@@ -12,9 +12,9 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   { 
-    title: "Santé et sécurité au premier plan",
+    title: "Interventions Longues et Disruptives -> Interventions Courtes et Minimalement Intrusives",
     description:
-    "Transformez votre lieu de travail avec des solutions ergonomiques qui réduisent drastiquement les accidents et maladies professionnels. Nous vous aidons à instaurer un environnement sain, réduisant l'absentéisme et boostant la productivité.",
+    "Notre approche unique réside dans notre capacité à intégrer rapidement et efficacement des solutions ergonomiques dans votre environnement de travail existant. Conçus pour minimiser les perturbations, nos processus sont flexibles et adaptés à votre calendrier, assurant une transition fluide sans sacrifier le temps précieux de vos employés. Choisissez nos services pour une amélioration qui respecte le rythme de votre entreprise.",
     type: "image",
     path: "/home/santé.png",
     format: "image/png",
@@ -24,9 +24,9 @@ const features = [
   </svg>
     ),
   },
-  {    title: "Performance et efficacité réinventées",
+  {    title: "Manque de Personnalisation -> Sur-mesure dans tout",
   description:
-    "Optimisez la productivité grâce à des flux de travail ergonomiquement améliorés. Nos interventions ciblées propulsent la qualité et l'efficacité opérationnelle, plaçant votre entreprise sur la voie de la réussite continue.",
+    "Adaptés aux besoins, aux capacités économiques et humaines, aux habitudes, aux canaux et styles de communication, etc.",
     type: "image",
     path: "/home/performance.png",
     format: "image/png",
@@ -36,16 +36,16 @@ const features = [
   </svg>
   ),
   },
-  {    title: "Minimisez vos coûts et maximisez votre rentabilité", 
+  {    title: "Manque de Suivi et d'Accompagnement -> Support Continu et Accès à des Ressources en Ligne", 
   description:
-    "Éliminez les coûts cachés liés à une mauvaise ergonomie. Nos stratégies ergonomiques intelligentes réduisent les dépenses superflues et augmentent la rentabilité, solidifiant la santé financière de votre entreprise.",
+    "Un accompagnement continu pendnat l'intervention, un accès conservé après l'intervention, avec un espace client riche en ressources pour un suivi et une application aisés.",
     type: "image",
     path: "/home/rentabilité.png",
     format: "image/png",
   svg: (
 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 10h9.2M6 14h9.2M18 5a6 6 0 0 0-3.4-1C11 4 7.8 7.6 7.8 12s3 8 6.8 8a6 6 0 0 0 3.4-1"/>
-  </svg>    
+  </svg>
   ),
   },
   {

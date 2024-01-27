@@ -60,7 +60,7 @@ const Problem = () => {
         </p>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
           {
-            "augmentation du turnover dû à des conditions de travail inadéquates, inefficacité des flux de travail réduisant la qualité des outputs, surcoûts liés à la gestion inefficace des ressources humaines, baisse de la satisfaction au travail impactant la rétention des talents, difficultés d'implémentation de pratiques ergonomiques innovantes."
+            "augmentation du turnover, inefficacité des flux de travail, surcoûts liés à la gestion des RH, baisse de la satisfaction au travail, difficultés à innover ..."
           }
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
