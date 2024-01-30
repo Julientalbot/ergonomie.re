@@ -11,93 +11,67 @@ import Image from "next/image";
 // - format: The format of the media (if type is 'video')
 // - alt: The alt text of the image (if type is 'image')
 const features = [
-  {
-    title: "Santé",
+  { 
+    title: "Santé et sécurité au premier plan",
     description:
-      "Diminuer le turn-over, les arrêts maladies récurrents",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Performance",
-    description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+    "Transformez votre lieu de travail avec des solutions ergonomiques qui réduisent drastiquement les accidents et maladies professionnels. Nous vous aidons à instaurer un environnement sain, réduisant l'absentéisme et boostant la productivité.",
     type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "A computer",
+    path: "/home/santé.png",
+    format: "image/png",
     svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
-        />
-      </svg>
+<svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"/>
+  </svg>
+    ),
+  },
+  {    title: "Performance et efficacité réinventées",
+  description:
+    "Optimisez la productivité grâce à des flux de travail ergonomiquement améliorés. Nos interventions ciblées propulsent la qualité et l'efficacité opérationnelle, plaçant votre entreprise sur la voie de la réussite continue.",
+    type: "image",
+    path: "/home/performance.png",
+    format: "image/png",
+  svg: (
+    <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 4.5V19c0 .6.4 1 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.2M20 9v3.2"/>
+  </svg>
+  ),
+  },
+  {    title: "Minimisez vos coûts et maximisez votre rentabilité", 
+  description:
+    "Éliminez les coûts cachés liés à une mauvaise ergonomie. Nos stratégies ergonomiques intelligentes réduisent les dépenses superflues et augmentent la rentabilité, solidifiant la santé financière de votre entreprise.",
+    type: "image",
+    path: "/home/rentabilité.png",
+    format: "image/png",
+  svg: (
+<svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 10h9.2M6 14h9.2M18 5a6 6 0 0 0-3.4-1C11 4 7.8 7.6 7.8 12s3 8 6.8 8a6 6 0 0 0 3.4-1"/>
+  </svg>    
+  ),
+  },
+  {
+    title: "Créez une culture d'entreprise qui attire et garde les talents",
+    description:
+      "Forgez une culture d'entreprise qui valorise et engage chaque employé. En se concentrant sur le bien-être, nous aidons à attirer et retenir les talents, renforçant ainsi la dynamique interne et l'attractivité externe.",
+      type: "image",
+      path: "/home/coopération.png",
+      format: "image/png",
+    svg: (
+<svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3a2.5 2.5 0 1 1 2-4.5M19.5 17h.5c.6 0 1-.4 1-1a3 3 0 0 0-3-3h-1m0-3a2.5 2.5 0 1 0-2-4.5m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3c0 .6-.4 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
+  </svg>
     ),
   },
   {
-    title: "Productivité",
+    title: "Pionnier de l'innovation ergonomique",
     description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
+    "Soyez à l'avant-garde avec des pratiques ergonomiques novatrices. Nous vous équipons pour embrasser le changement et stimuler l'innovation, assurant à votre entreprise de rester compétitive dans un monde en constante évolution.",
+    type: "image",
+    path: "/home/innovation.png",
+    format: "image/png",
     svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Sécurité",
-    description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
-        />
-      </svg>
+      <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+  </svg>
     ),
   },
 ];
@@ -191,17 +165,17 @@ const FeaturesAccordion = () => {
 
   return (
     <section 
-      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 "
+      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto"
       id="comment"
     >
       <div className="px-8">
-        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          Le consultant dont vous avez besoin pour
+        <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
+          transformez les défis ergonomiques en
           <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            propulser votre entreprise
+            avantages stratégiques
           </span>
         </h2>
-        <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
             <ul className="w-full">
               {features.map((feature, i) => (
@@ -214,7 +188,6 @@ const FeaturesAccordion = () => {
                 />
               ))}
             </ul>
-
             <Media feature={features[featureSelected]} key={featureSelected} />
           </div>
         </div>
@@ -225,3 +198,36 @@ const FeaturesAccordion = () => {
 
 export default FeaturesAccordion;
 
+//Pour inverser l'ordre :
+{/* <section  */}
+      // className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto"
+      // id="comment"
+    // >
+      {/* <div className="px-8"> */}
+        {/* <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8"> */}
+          {/* transformez les défis ergonomiques en */}
+          {/* <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap"> */}
+            {/* avantages stratégiques */}
+          {/* </span> */}
+        {/* </h2> */}
+        {/* <div className="flex flex-col md:flex-row gap-12 md:gap-24"> */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-8 sm:gap-12 lg:gap-20"> */}
+            {/* <ul className="w-full md:order-2"> */}
+              {/* {features.map((feature, i) => ( */}
+                // <Item
+                  // key={feature.title}
+                  // index={i}
+                  // feature={feature}
+                  // isOpen={featureSelected === i}
+                  // setFeatureSelected={() => setFeatureSelected(i)}
+                // />
+              // ))}
+            {/* </ul> */}
+{/*  */}
+            {/* <div className="md:order-1"> */}
+              {/* <Media feature={features[featureSelected]} key={featureSelected} /> */}
+            {/* </div> */}
+          {/* </div> */}
+        {/* </div> */}
+      {/* </div> */}
+    {/* </section> */}

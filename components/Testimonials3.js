@@ -1,6 +1,8 @@
 import Image from "next/image";
 import config from "@/config";
 
+// TODO : mentionner des résultats en lien avec les problématiques et solutions précédemment avancés, au nombre de 5 donc.
+
 // The list of your testimonials. It needs 3 items to fill the row.
 const list = [
   {

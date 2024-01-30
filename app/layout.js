@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
-import PlausibleProvider from "next-plausible";
+// import PlausibleProvider from "next-plausible";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="fr" data-theme={config.colors.theme} className={font.className}>
       {config.domainName && (
         <head>
-          <PlausibleProvider domain={config.domainName} />
+          {/* <PlausibleProvider domain={config.domainName} /> */}
           {/* D'autres éléments de <head> peuvent être ajoutés ici */}
           <title>ergonomie.re</title> {/* Titre ajouté - considérez si cela doit être ici ou géré différemment */}
         </head>
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         {/* ClientLayout contient tous les wrappers clients (support chat Crisp, messages toast, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>
         <SpeedInsights /> {/* Composant SpeedInsights ajouté */}
+        <Analytics /> {/* Composant Analytics ajouté */}
       </body>
     </html>
   );
