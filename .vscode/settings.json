@@ -2,5 +2,5 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "CodeGPT.apiKey": "CodeGPT Plus Beta"
+  "CodeGPT.apiKey": "Ollama"
 }

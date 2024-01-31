@@ -170,8 +170,9 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          transformez les défis ergonomiques en
-          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+          {"transformez les défis ergonomiques en "}
+          {/* <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap"> */}
+          <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
             avantages stratégiques
           </span>
         </h2>
