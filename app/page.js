@@ -25,7 +25,7 @@ export default function Home() {
         <Problem /> {/* Agitation du problème = listing précis des effets de l'absence d'ergonomie. */}
         <FeaturesAccordion2 /> {/*à créer. Présentation de la solution et de ses bénéfices. Equivalent de : "vous utilisez telle méthode, c'est l'ancienne, voilà avec ma méthode ce qu'on pourrait avoir."*/}
         {/* <FeaturesAccordion3 /> */}
-        {/* <FeaturesListicle /> méthodologie détaillée et éléments différençiants par rapport à la concurrence */}
+        <FeaturesListicle /> méthodologie détaillée et éléments différençiants par rapport à la concurrence
         <Testimonials3 />
         <CalEmbed />
         <About />

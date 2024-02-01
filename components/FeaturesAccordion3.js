@@ -12,7 +12,7 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   { 
-    title: "Interventions Longues et Disruptives -> Interventions Courtes et Minimalement Intrusives",
+    title: "Efficacité Maximale, Perturbation Minimale",
     description:
     "Notre approche unique réside dans notre capacité à intégrer rapidement et efficacement des solutions ergonomiques dans votre environnement de travail existant. Conçus pour minimiser les perturbations, nos processus sont flexibles et adaptés à votre calendrier, assurant une transition fluide sans sacrifier le temps précieux de vos employés. Choisissez nos services pour une amélioration qui respecte le rythme de votre entreprise.",
     type: "image",
@@ -24,11 +24,10 @@ const features = [
   </svg>
     ),
   },
-  {    title: "Manque de Personnalisation -> Sur-mesure dans tout",
+  {    title: "Un Investissement intelligent, Rentable et Mesurable",
   description:
-    "Adaptés aux besoins, aux capacités économiques et humaines, aux habitudes, aux canaux et styles de communication, etc.",
-    type: "image",
-    path: "/home/performance.png",
+  "Notre approche se distingue par son haut rendement sur investissement. Grâce à l'utilisation de technologies avancées comme l'IA, nous offrons des solutions ergonomiques non seulement efficaces mais aussi rentables. Chaque intervention est orientée vers l'amélioration tangible de la productivité et la réduction des coûts, avec des résultats mesurables pour assurer la clarté et la transparence du retour sur investissement.",
+  path: "/home/performance.png",
     format: "image/png",
   svg: (
     <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -36,10 +35,10 @@ const features = [
   </svg>
   ),
   },
-  {    title: "Manque de Suivi et d'Accompagnement -> Support Continu et Accès à des Ressources en Ligne", 
+  {    title: "Solutions Personnalisées et Adaptatives", 
   description:
-    "Un accompagnement continu pendnat l'intervention, un accès conservé après l'intervention, avec un espace client riche en ressources pour un suivi et une application aisés.",
-    type: "image",
+  "Nos services se distinguent par leur capacité à s'adapter parfaitement à la spécificité de chaque entreprise. Que ce soit en termes de taille, de secteur d'activité, ou de culture locale, nous offrons des recommandations et des interventions sur mesure. Notre engagement commence dès le premier contact avec une formation continue, assurant des solutions parfaitement alignées avec votre contexte unique.",
+  type: "image",
     path: "/home/rentabilité.png",
     format: "image/png",
   svg: (
@@ -49,9 +48,9 @@ const features = [
   ),
   },
   {
-    title: "Créez une culture d'entreprise qui attire et garde les talents",
+    title: "Créez une culture d'entreprise qui attire et garde les talents && Partenariat Durable et Engagement Profond",
     description:
-      "Forgez une culture d'entreprise qui valorise et engage chaque employé. En se concentrant sur le bien-être, nous aidons à attirer et retenir les talents, renforçant ainsi la dynamique interne et l'attractivité externe.",
+      "Forgez une culture d'entreprise qui valorise et engage chaque employé. En se concentrant sur le bien-être, nous aidons à attirer et retenir les talents, renforçant ainsi la dynamique interne et l'attractivité externe. && Chez nous, l'intervention ne se termine pas avec notre départ. Nous nous engageons dans un partenariat à long terme, offrant un suivi post-intervention pour garantir la pérennité des améliorations. De plus, nos programmes de formation et de sensibilisation garantissent l'engagement et l'adoption des pratiques ergonomiques par tous les employés, renforçant ainsi l'efficacité et la durabilité des résultats.",
       type: "image",
       path: "/home/coopération.png",
       format: "image/png",
@@ -62,9 +61,9 @@ const features = [
     ),
   },
   {
-    title: "Pionnier de l'innovation ergonomique",
+    title: "Clarté et Transparence dans Chaque Échange",
     description:
-    "Soyez à l'avant-garde avec des pratiques ergonomiques novatrices. Nous vous équipons pour embrasser le changement et stimuler l'innovation, assurant à votre entreprise de rester compétitive dans un monde en constante évolution.",
+    "La communication est au cœur de notre approche. Nous nous engageons à maintenir une communication transparente et régulière, vous tenant informé à chaque étape du projet. Notre objectif est d'assurer une collaboration fluide et efficace, éliminant toute ambiguïté ou malentendu. De plus, l'accès à un espace client dédié sur ergonomie.re vous permet de suivre l'évolution de notre intervention et d'accéder à toutes les informations pertinentes en toute transparence.",
     type: "image",
     path: "/home/innovation.png",
     format: "image/png",
@@ -171,7 +170,8 @@ const FeaturesAccordion = () => {
       <div className="px-8">
         <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           transformez les défis ergonomiques en
-          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+          {/* <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap"> */}
+          <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
             avantages stratégiques
           </span>
         </h2>
