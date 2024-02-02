@@ -170,14 +170,20 @@ const FeaturesAccordion = () => {
       <div className="px-8">
         <h2 className="text-center max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           transformez les défis ergonomiques en
-          {/* <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap"> */}
-          <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
+          <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             avantages stratégiques
           </span>
         </h2>
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
-            <ul className="w-full">
+            
+            {/* Placez le composant Media en premier et utilisez md:order-1 pour le déplacer vers la gauche */}
+            <div className="md:order-1">
+              <Media feature={features[featureSelected]} key={featureSelected} />
+            </div>
+
+            {/* Utilisez md:order-2 pour déplacer la liste des fonctionnalités vers la droite */}
+            <ul className="w-full md:order-2">
               {features.map((feature, i) => (
                 <Item
                   key={feature.title}
@@ -188,7 +194,7 @@ const FeaturesAccordion = () => {
                 />
               ))}
             </ul>
-            <Media feature={features[featureSelected]} key={featureSelected} />
+
           </div>
         </div>
       </div>

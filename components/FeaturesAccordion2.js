@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
+import CTAButton from "./CTAButton" 
 
 // The features array is a list of features that will be displayed in the accordion.
 // - title: The title of the feature
@@ -191,6 +192,9 @@ const FeaturesAccordion = () => {
             </ul>
             <Media feature={features[featureSelected]} key={featureSelected} />
           </div>
+        </div>
+        <div className="flex justify-center mt-12">
+          <CTAButton className="text-white animate-ctaBlack" />
         </div>
       </div>
     </section>

@@ -1,18 +1,21 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import CTAButton from "./CTAButton";
 
+// List of features to display:
+// - name: name of the feature
+// - description: description of the feature (can be any JSX)
+// - svg: icon of the feature
 const features = [
   {
-    name: "Efficacité",
+    name: "Analyse",
     description: (
       <>
         <ul className="space-y-1">
           {[
-            "Planification flexible",
-            "Interventions rapides",
-            "Perturbations minimales",
+            "Étude approfondie des conditions de travail",
+            "Identification des points de friction",
+            "Analyse des interactions et de l'ergonomie des postes",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -31,7 +34,7 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
+          <li className="flex items-center gap-3 text-red-600 font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -44,7 +47,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-            Temps gagné = 2h par jour et salarié
+            {"Amélioration du bien-être et de l'efficacité des employés"}
           </li>
         </ul>
       </>
@@ -60,210 +63,20 @@ const features = [
       >
         <path
           strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M6.34315 17.6569C5.22433 16.538 4.4624 15.1126 4.15372 13.5607C3.84504 12.0089 4.00346 10.4003 4.60896 8.93853C5.21446 7.47672 6.23984 6.22729 7.55544 5.34824C8.87103 4.46919 10.4177 4 12 4C13.5823 4 15.129 4.46919 16.4446 5.34824C17.7602 6.22729 18.7855 7.47672 19.391 8.93853C19.9965 10.4003 20.155 12.0089 19.8463 13.5607C19.5376 15.1126 18.7757 16.538 17.6569 17.6569" />
-        <path 
-          d="M12 12L16 10"
-          />
-      </svg>
-    ),
-  },
-  {
-    name: "Rentabilité",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "Résultats mesurables",
-            "Recommandations orientées ROI",
-            "Coûts d'intervention optimisés grâce à l'IA",
-          ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clipRule="evenodd"
-                />
-              </svg>
-
-              {item}
-            </li>
-          ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Coûts évités = + 5% de bénéfices
-          </li>
-        </ul>
-      </>
-    ),
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-8 h-8"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 21H21M3 18H21M5.82333 3.00037C6.2383 3.36683 6.5 3.90285 6.5 4.5C6.5 5.60457 5.60457 6.5 4.5 6.5C3.90285 6.5 3.36683 6.2383 3.00037 5.82333M5.82333 3.00037C5.94144 3 6.06676 3 6.2 3H17.8C17.9332 3 18.0586 3 18.1767 3.00037M5.82333 3.00037C4.94852 3.00308 4.46895 3.02593 4.09202 3.21799C3.71569 3.40973 3.40973 3.71569 3.21799 4.09202C3.02593 4.46895 3.00308 4.94852 3.00037 5.82333M3.00037 5.82333C3 5.94144 3 6.06676 3 6.2V11.8C3 11.9332 3 12.0586 3.00037 12.1767M3.00037 12.1767C3.36683 11.7617 3.90285 11.5 4.5 11.5C5.60457 11.5 6.5 12.3954 6.5 13.5C6.5 14.0971 6.2383 14.6332 5.82333 14.9996M3.00037 12.1767C3.00308 13.0515 3.02593 13.531 3.21799 13.908C3.40973 14.2843 3.71569 14.5903 4.09202 14.782C4.46895 14.9741 4.94852 14.9969 5.82333 14.9996M5.82333 14.9996C5.94144 15 6.06676 15 6.2 15H17.8C17.9332 15 18.0586 15 18.1767 14.9996M21 12.1771C20.6335 11.7619 20.0973 11.5 19.5 11.5C18.3954 11.5 17.5 12.3954 17.5 13.5C17.5 14.0971 17.7617 14.6332 18.1767 14.9996M21 12.1771C21.0004 12.0589 21 11.9334 21 11.8V6.2C21 6.06676 21 5.94144 20.9996 5.82333M21 12.1771C20.9973 13.0516 20.974 13.5311 20.782 13.908C20.5903 14.2843 20.2843 14.5903 19.908 14.782C19.5311 14.9741 19.0515 14.9969 18.1767 14.9996M20.9996 5.82333C20.6332 6.2383 20.0971 6.5 19.5 6.5C18.3954 6.5 17.5 5.60457 17.5 4.5C17.5 3.90285 17.7617 3.36683 18.1767 3.00037M20.9996 5.82333C20.9969 4.94852 20.9741 4.46895 20.782 4.09202C20.5903 3.71569 20.2843 3.40973 19.908 3.21799C19.5311 3.02593 19.0515 3.00308 18.1767 3.00037M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"/>
-      </svg>
-    ),
-  },
-  {
-    name: "Adaptabilité",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "Solutions sur-mesure",
-            "Adaptation au secteur et à la taille de l'entreprise",
-            "Intégrations aux pratiques existantes",
-          ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clipRule="evenodd"
-                />
-              </svg>
-
-              {item}
-            </li>
-          ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Services sur-mesure = 100% conforme aux besoins spécifiques
-          </li>
-        </ul>
-      </>
-    ),
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-8 h-8"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M13.3636 5.25C12.2716 5.25 11.3864 6.13525 11.3864 7.22727V7.97727L7.97727 7.97727L7.97727 11.3864H7.22727C6.13526 11.3864 5.25 12.2716 5.25 13.3636C5.25 14.4557 6.13526 15.3409 7.22727 15.3409H7.97727L7.97727 18.75L18.75 18.75V16.7598C17.1901 16.4169 16.0227 15.0266 16.0227 13.3636C16.0227 11.7007 17.1901 10.3104 18.75 9.96745V7.97727L15.3409 7.97727V7.22727C15.3409 6.13526 14.4557 5.25 13.3636 5.25ZM9.96745 6.47727C10.3104 4.91733 11.7007 3.75 13.3636 3.75C15.0266 3.75 16.4169 4.91733 16.7598 6.47727L20.25 6.47727V11.3864L19.5 11.3864C18.408 11.3864 17.5227 12.2716 17.5227 13.3636C17.5227 14.4557 18.408 15.3409 19.5 15.3409H20.25V20.25L6.47727 20.25L6.47727 16.7598C4.91733 16.4169 3.75 15.0266 3.75 13.3636C3.75 11.7007 4.91733 10.3104 6.47727 9.96745L6.47727 6.47727L9.96745 6.47727Z" 
+          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
         />
       </svg>
     ),
   },
   {
-    name: "Durabilité",
+    name: "Conception",
     description: (
       <>
         <ul className="space-y-2">
           {[
-            "Suivi post-intervention",
-            "Programmes de formation et de sensibilisation",
-            "Engagement élevé des salariés",
-          ].map(
-            (item) => (
-              <li key={item} className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-[18px] h-[18px] inline shrink-0 opacity-80"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-
-                {item}
-              </li>
-            )
-          )}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-              Rétention des salariés et attractivité = +20% sur un an
-          </li>
-        </ul>
-      </>
-    ),
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-8 h-8"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M18,7a7.669,7.669,0,0,0-6,3.19A7.669,7.669,0,0,0,6,7C2.313,7,1,9.583,1,12c0,3.687,2.583,5,5,5a7.669,7.669,0,0,0,6-3.19A7.669,7.669,0,0,0,18,17c2.417,0,5-1.313,5-5C23,9.583,21.687,7,18,7ZM6,15a2.689,2.689,0,0,1-3-3A2.689,2.689,0,0,1,6,9c2.579,0,4.225,2.065,4.837,3C10.225,12.935,8.579,15,6,15Zm12,0c-2.579,0-4.225-2.065-4.837-3,.612-.935,2.258-3,4.837-3a2.689,2.689,0,0,1,3,3A2.689,2.689,0,0,1,18,15Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Transparence",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "Communication claire et régulière",
-            "Espace client pour le suivi",
-            "Réponses claires et rapides",
+            "Développement collaboratif avec les parties prenantes",
+            "Création de solutions innovantes et adaptées",
+            "Validation des concepts par des prototypes",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -282,7 +95,7 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
+          <li className="flex items-center gap-3 text-red-600 font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -295,7 +108,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-            Collaboration fluide = 0% de malentendu
+            {"Solutions personnalisées favorisant l'engagement des équipes"}
           </li>
         </ul>
       </>
@@ -312,7 +125,257 @@ const features = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M8.6109715,18.5930706 L4.8,21 L5.46773712,16.7827129 C3.88371393,15.3227187 3,13.2946794 3,11.0526316 C3,6.60528596 6.4771525,3 12,3 C17.5228475,3 21,6.60528596 21,11.0526316 C21,15.4999772 17.5228475,19.1052632 12,19.1052632 C10.7621927,19.1052632 9.62714465,18.9241626 8.6109715,18.5930706 L8.6109715,18.5930706 Z"
+          d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Accompagnement",
+    description: (
+      <>
+        <ul className="space-y-2">
+          {[
+            "Guidance personnalisée pour l'intégration des solutions",
+            "Programmes de formation sur mesure",
+            "Assistance continue pendant la phase de transition",
+          ].map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+
+              {item}
+            </li>
+          ))}
+          <li className="flex items-center gap-3 text-red-600 font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-[18px] h-[18px] inline shrink-0"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clipRule="evenodd"
+              />
+            </svg>
+            {
+              "Transition efficace et minimisation de la résistance au changement"
+            }
+          </li>
+        </ul>
+      </>
+    ),
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-8 h-8"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Suivi",
+    description: (
+      <>
+        <ul className="space-y-2">
+          {[
+            "Mesure des impacts via des KPI spécifiques",
+            "Rapports réguliers sur l'évolution de la performance",
+            "Recommandations pour des améliorations continues",
+          ].map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+
+              {item}
+            </li>
+          ))}
+          <li className="flex items-center gap-3 text-red-600 font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-[18px] h-[18px] inline shrink-0"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clipRule="evenodd"
+              />
+            </svg>
+            {"Résultats mesurables et amélioration continue garantie"}
+          </li>
+        </ul>
+      </>
+    ),
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-8 h-8"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Formation",
+    description: (
+      <>
+        <ul className="space-y-2">
+          {[
+            "Sessions de formation pour une autonomie accrue",
+            "Renforcement des compétences et des connaissances ergonomiques",
+            "Soutien pour l'adoption des bonnes pratiques",
+          ].map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+
+              {item}
+            </li>
+          ))}
+          <li className="flex items-center gap-3 text-red-600 font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-[18px] h-[18px] inline shrink-0"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clipRule="evenodd"
+              />
+            </svg>
+            {"Autonomie accrue et compétences durables des équipes"}
+          </li>
+        </ul>
+      </>
+    ),
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-8 h-8"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Modèle économique",
+    description: (
+      <>
+        <ul className="space-y-2">
+          {[
+            "Exploration de l'Économie de la Fonctionnalité et de la Coopération",
+            "Conseils pour une performance durable et une responsabilité partagée",
+            "Stratégies pour une croissance économique respectueuse des principes éthiques et sociaux",
+          ].map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+
+              {item}
+            </li>
+          ))}
+          <li className="flex items-center gap-3 text-red-600 font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-[18px] h-[18px] inline shrink-0"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clipRule="evenodd"
+              />
+            </svg>
+            {"Avantage concurrentiel grâce à un modèle d'affaires innovant"}
+          </li>
+        </ul>
+      </>
+    ),
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-8 h-8"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
         />
       </svg>
     ),
@@ -368,30 +431,25 @@ const FeaturesListicle = () => {
   }, [featureSelected, hasClicked]);
 
   return (
-    <section className="py-24" id="features">
+    <section className="pt-16" id="features">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-base-100 max-md:px-8 max-w-3xl">
-          <p className="text-accent font-medium text-sm font-mono mb-3">
-            {/* const launch_time = &quot;Today&quot;; */}
-          </p>
+        <div className="max-md:px-8 max-w-3xl">
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            {"optimisez "}
-            <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
-              durablement
-            </span>
-            {" votre entreprise"}
+            {"Méthodologie de l'intervention"}
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            "ergonomie.re propose des solutions ergonomiques innovantes et personnalisées pour transformer votre environnement de travail. En intégrant nos services, vous bénéficierez d'une amélioration notable en termes de santé, de performance, d'efficacité et de satisfaction des employés, tout en garantissant une rentabilité durable pour votre entreprise."
-            </div>
+            {
+              "Notre méthodologie en cinq étapes clés allie analyse rigoureuse et innovation pratique pour optimiser la performance et le bien-être au sein de votre entreprise. Chaque étape est conçue pour apporter des avantages spécifiques, assurant des résultats durables et mesurables."
+            }
+          </div>
         </div>
       </div>
 
       <div>
         <div className="grid grid-cols-4 md:flex justify-start gap-4 md:gap-12 max-md:px-8 max-w-3xl mx-auto mb-8">
-          {features.map((feature) => (
+          {features.map((feature, index) => (
             <span
               key={feature.name}
               onClick={() => {
@@ -401,18 +459,18 @@ const FeaturesListicle = () => {
               className={`flex flex-col items-center justify-center gap-3 select-none cursor-pointer p-2 duration-200 group`}
             >
               <span
-                className={`duration-100 ${
+                className={`duration-100 text-3xl ${
                   featureSelected === feature.name
-                    ? "text-primary"
+                    ? "text-red-600"
                     : "text-base-content/30 group-hover:text-base-content/50"
                 }`}
               >
-                {feature.svg}
+                {index + 1}
               </span>
               <span
                 className={`font-semibold text-sm ${
                   featureSelected === feature.name
-                    ? "text-primary"
+                    ? "text-red-600"
                     : "text-base-content/50"
                 }`}
               >
@@ -421,7 +479,7 @@ const FeaturesListicle = () => {
             </span>
           ))}
         </div>
-        <div className="bg-base-200">
+        <div className="">
           <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center md:justify-start md:items-center gap-12">
             <div
               className="text-base-content/80 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity"
@@ -438,9 +496,6 @@ const FeaturesListicle = () => {
       </div>
       {/* Just used to know it's the end of the autoscroll feature (optional, see useEffect) */}
       <p className="opacity-0" ref={featuresEndRef}></p>
-      <div className="flex justify-center mt-12">
-          <CTAButton className="text-white animate-ctaBlack" />
-        </div>
     </section>
   );
 };
