@@ -384,7 +384,7 @@ const FeaturesListicle = () => {
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            "ergonomie.re propose des solutions ergonomiques innovantes et personnalisées pour transformer votre environnement de travail. En intégrant nos services, vous bénéficierez d'une amélioration notable en termes de santé, de performance, d'efficacité et de satisfaction des employés, tout en garantissant une rentabilité durable pour votre entreprise."
+            {"ergonomie.re propose des solutions ergonomiques innovantes et personnalisées pour transformer votre environnement de travail. En intégrant nos services, vous bénéficierez d'une amélioration notable en termes de santé, de performance, d'efficacité et de satisfaction des employés, tout en garantissant une rentabilité durable pour votre entreprise."}
             </div>
         </div>
       </div>
