@@ -13,8 +13,8 @@ const features = [
       <>
         <ul className="space-y-1">
           {[
-            "Étude approfondie des conditions de travail",
             "Identification des points de friction",
+            "Étude approfondie des conditions de travail",
             "Analyse des interactions et de l'ergonomie des postes",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
