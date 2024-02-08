@@ -17,12 +17,12 @@ const Hero = () => {
         </h1>
         <div className="text-lg opacity-80 leading-relaxed flex flex-col gap-2">
         <ul className="list-disc pl-5">
-  <li>hausse des accidents et arrêts de travail,</li>
-  <li>{"baisse de l'efficacité opérationnelle,"}</li>
-  <li>augmentation des coûts,</li>
-  <li>{"diminution de l'engagement des employés,"}</li>
-  <li>{"incapacité à innover ..."}</li>
-</ul>
+          <li>{"hausse des accidents et arrêts de travail"}</li>
+          <li>{"baisse de l'efficacité opérationnelle"}</li>
+          <li>{"augmentation des coûts"}</li>
+          <li>{"diminution de l'engagement des employés"}</li>
+          <li>{"incapacité à innover ..."}</li>
+        </ul>
         </div>
         <div className="flex gap-2">
           <CTAButton className="text-white animate-ctaBlack" />

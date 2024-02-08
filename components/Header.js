@@ -18,6 +18,10 @@ const links = [
     label: "Comment ?",
   },
   {
+  //   href: "/#why-me",
+  //   label: "Pourquoi moi ?",
+  // },
+  // {
     href: "/#à-propos",
     label: "Qui suis-je ?",
   },

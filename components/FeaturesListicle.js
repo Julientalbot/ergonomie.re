@@ -10,9 +10,9 @@ const features = [
       <>
         <ul className="space-y-1">
           {[
-            "Planification flexible",
-            "Interventions rapides",
-            "Perturbations minimales",
+            "Interventions réactives et rapides",
+            "Perturbations minimales de vos activités",
+            "Planning d'intervention adaptée à votre planning",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -44,7 +44,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-            Temps gagné = 2h par jour et salarié
+            Temps gagné dés l'intervention = + 2h par jour et salarié
           </li>
         </ul>
       </>
@@ -74,9 +74,9 @@ const features = [
       <>
         <ul className="space-y-2">
           {[
-            "Résultats mesurables",
-            "Recommandations orientées ROI",
-            "Coûts d'intervention optimisés grâce à l'IA",
+            "Résultats de l'intervention mesurables",
+            "Recommandations ergonomiques orientées ROI",
+            "Transparence des coûts penadnt et après l'intervention",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -108,7 +108,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-            Coûts évités = + 5% de bénéfices
+            ROI = + 10% par an
           </li>
         </ul>
       </>
@@ -135,9 +135,9 @@ const features = [
       <>
         <ul className="space-y-2">
           {[
-            "Solutions sur-mesure",
             "Adaptation au secteur et à la taille de l'entreprise",
-            "Intégrations aux pratiques existantes",
+            "Analyse et prise en compte du modèle économique de l'entreprise",
+            "Conceptions et intégrations des solutions aux pratiques existantes",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -169,7 +169,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-            Services sur-mesure = 100% conforme aux besoins spécifiques
+            Réel sur-mesure = + 20% de satisfaction des salariés
           </li>
         </ul>
       </>
@@ -197,9 +197,9 @@ const features = [
       <>
         <ul className="space-y-2">
           {[
-            "Suivi post-intervention",
-            "Programmes de formation et de sensibilisation",
-            "Engagement élevé des salariés",
+            "Suivi post-intervention important",
+            "Recommandations choisies pour leurs durabilités et évolutivités",
+            "Formation et sensibilisation des salariés pour assurer une continuité",
           ].map(
             (item) => (
               <li key={item} className="flex items-center gap-3">
@@ -233,7 +233,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-              Rétention des salariés et attractivité = +20% sur un an
+              Maintien des améliorations post-intervention = + 80% après un an
           </li>
         </ul>
       </>
@@ -261,9 +261,9 @@ const features = [
       <>
         <ul className="space-y-2">
           {[
-            "Communication claire et régulière",
-            "Espace client pour le suivi",
-            "Réponses claires et rapides",
+            "Communication claire et continue",
+            "Adaptation du discours aux différents interlocuteurs",
+            "Accès à un espace client ergonomie.re pour faciliter tous les échanges",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -368,7 +368,7 @@ const FeaturesListicle = () => {
   }, [featureSelected, hasClicked]);
 
   return (
-    <section className="py-24" id="features">
+    <section className="py-24" id="why-me">
       <div className="max-w-3xl mx-auto">
         <div className="bg-base-100 max-md:px-8 max-w-3xl">
           <p className="text-accent font-medium text-sm font-mono mb-3">
@@ -376,15 +376,15 @@ const FeaturesListicle = () => {
           </p>
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            {"optimisez "}
+            {"un consultant en ergonomie qui "}
             <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
-              durablement
+              comprend vos enjeux
             </span>
-            {" votre entreprise"}
+            {/* {" votre entreprise"} */}
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            {"ergonomie.re propose des solutions ergonomiques innovantes et personnalisées pour transformer votre environnement de travail. En intégrant nos services, vous bénéficierez d'une amélioration notable en termes de santé, de performance, d'efficacité et de satisfaction des employés, tout en garantissant une rentabilité durable pour votre entreprise."}
+            {"chez ergonomie.re, nous comprenons les défis uniques auxquels votre entreprise est confrontée. Contrairement aux solutions traditionnelles, nos services sont conçus pour offrir une valeur ajoutée significative, répondant spécifiquement aux besoins et contraintes de vos entreprises. Voici comment nous nous distinguons :"}
             </div>
         </div>
       </div>
