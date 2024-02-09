@@ -44,7 +44,7 @@ const features = [
                 clipRule="evenodd"
               />
             </svg>
-            Temps gagné dés l'intervention = + 2h par jour et salarié
+            {"Temps gagné dés l'intervention = + 2h par jour et salarié"}
           </li>
         </ul>
       </>

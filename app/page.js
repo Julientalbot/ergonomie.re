@@ -20,7 +20,7 @@ export default function Home() {
         <Hero /> {/*  */}
         <Problem /> {/* Agitation du problème = listing précis des effets de l'absence d'ergonomie. */}
         <FeaturesAccordion2 /> {/* Présentation de la solution et de ses bénéfices. Equivalent de : "vous utilisez telle méthode, c'est l'ancienne, voilà avec ma méthode ce qu'on pourrait avoir."*/}
-        {/* <FeaturesListicle />  */}
+        <FeaturesListicle /> 
         <Testimonials3 /> {/*  */}
         <CalEmbed /> {/*  */}
         <About /> {/*  */}
