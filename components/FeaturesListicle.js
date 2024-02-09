@@ -376,7 +376,7 @@ const FeaturesListicle = () => {
           </p>
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            {"un consultant en ergonomie qui "}
+            {"choisissez un consultant en ergonomie qui "}
             <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
               comprend vos enjeux
             </span>
