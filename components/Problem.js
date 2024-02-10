@@ -60,16 +60,16 @@ const Problem = () => {
         </p>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
           {
-            "le manque d'ergonomie peut vous faire couler : hausse de l'absentéisme, inefficacité des processus de travail, surcoûts liés à la gestion des RH, diffultés à garder les employés, peine à se démarquer de la concurrence ..."
+            "le manque d'ergonomie peut faire couler votre entreprise : hausse de l'absentéisme, inefficacité des processus de travail, surcoûts liés à la gestion des RH, diffultés à garder les employés, peine à se démarquer de la concurrence ..."
           }
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
   
-          <Step emoji="🤕" text="Augmentation des arrêts de travail" />
+          <Step emoji="🤕" text="Dégradation de la santé des individus" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😩" text="Inefficacité des flux et processus" />
+          <Step emoji="😩" text="Baisse de la productivité et de la qualité" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
@@ -77,7 +77,7 @@ const Problem = () => {
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😔" text="Diminution de la satisfaction au travail" />
+          <Step emoji="😔" text="Diminution de l'attractivité de l'entreprise" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
