@@ -20,7 +20,7 @@ const Hero = () => {
           {/* {"de votre entreprise"} */}
         </h1>
         <div className="text-lg opacity-80 leading-relaxed flex flex-col gap-2">
-          {"Reconnaissez-vous ces signaux d'alerte au sein de votre entreprise ?"}
+          {"reconnaissez-vous ces signaux d'alerte au sein de votre entreprise ?"}
         <ul className="list-disc pl-5">
           <li>{"augmentation de l'absentéisme et des arrêts de travail"}</li> {/* santé */}
           <li>{"diminution de la productivité et de la qualité"}</li> {/* performance */}
@@ -28,7 +28,7 @@ const Hero = () => {
           <li>{"baisse de l'engagement des employés"}</li> {/* culture d'entreprise */}
           <li>{"incapacité croissante à innover ..."}</li> {/* coopération et innovation */}
         </ul>
-          {"Agissons ensemble dés aujourd'hui."}
+          {"agissons ensemble dés aujourd'hui."}
         </div>
         <div className="flex gap-2">
           <CTAButton className="text-white animate-ctaBlack" />
