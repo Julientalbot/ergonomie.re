@@ -46,21 +46,21 @@ const Problem = () => {
     <section className="scroll-mt-8" id="pourquoi">
       <div className="max-w-7xl mx-auto px-4 py-16 text-center rounded-lg">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          {"chaque situation de travail problématique vous draine"}{" "} 
+          {"chaque situation de travail problématique vous draine "}
           <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
           {/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
-          plus de 13340€
-          </span>{" "}
-          par an et par salarié*
+          {"4059€ euros"}
+          </span>
+          {" par an et par employé* "}
         </h2>
         <p className="opacity-60 mb-4">
           {
-            "*selon le Baromètre IBET 2016"
+            "* « Sur l’origine et le coût de l’absentéisme en France », Institut Sapiens (2018)"
           }
         </p>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
           {
-            "augmentation du turnover, inefficacité des flux de travail, surcoûts liés à la gestion des RH, baisse de la satisfaction au travail, difficultés à innover ..."
+            "le manque d'ergonomie peut vous faire couler : hausse de l'absentéisme, inefficacité des processus de travail, surcoûts liés à la gestion des RH, diffultés à garder les employés, peine à se démarquer de la concurrence ..."
           }
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
@@ -84,6 +84,11 @@ const Problem = () => {
           <Step emoji="🤔" text="Incapacité à innover et rester compétitif" />
 
         </div>
+        {/* </div>
+        <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
+          {"Il est temps d'adopter une approche proactive. Notre expertise en ergonomie et en EFC offre des solutions sur mesure pour transformer ces défis en opportunités."}
+        </p>
+        <div className="flex justify-center"> */}
         <div className="flex justify-center">
           <CTAButton className="text-white animate-ctaBlack" />
         </div>
