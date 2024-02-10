@@ -13,9 +13,9 @@ import CTAButton from "./CTAButton"
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   { 
-    title: "Santé et sécurité au premier plan",
+    title: "Préservez la santé de vos salariés et réduisez le turnover",
     description:
-    "Transformez votre lieu de travail avec des solutions ergonomiques qui réduisent drastiquement les accidents et maladies professionnels. Nous vous aidons à instaurer un environnement sain, réduisant l'absentéisme et boostant la productivité.",
+    "L'intégration d'une ergonomie optimale dans votre environnement de travail diminue significativement les arrêts de travail. En adaptant les postes, les outils et les tâches aux besoins et capacités de vos employés, nous prévenons les risques professionnels et améliorons leur santé, réduisant ainsi l'absentéisme.",
     type: "image",
     path: "/home/santé.png",
     format: "image/png",
@@ -25,9 +25,9 @@ const features = [
   </svg>
     ),
   },
-  {    title: "Performance et efficacité réinventées",
+  {    title: "Optimiser la performance de votre entreprise",
   description:
-    "Optimisez la productivité grâce à des flux de travail ergonomiquement améliorés. Nos interventions ciblées propulsent la qualité et l'efficacité opérationnelle, plaçant votre entreprise sur la voie de la réussite continue.",
+    "En repensant l'environnement de travail et les processus à travers le prisme de l'ergonomie, nous éliminons les inefficacités et favorisons une meilleure fluidité des opérations. L'accent mis sur une conception adaptée à l'utilisateur final assure une productivité accrue, tout en préservant la qualité du travail effectué.",
     type: "image",
     path: "/home/performance.png",
     format: "image/png",

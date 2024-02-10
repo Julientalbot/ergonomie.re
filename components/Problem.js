@@ -60,28 +60,28 @@ const Problem = () => {
         </p>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
           {
-            "le manque d'ergonomie peut faire couler votre entreprise : hausse de l'absentéisme, inefficacité des processus de travail, surcoûts liés à la gestion des RH, diffultés à garder les employés, peine à se démarquer de la concurrence ..."
+            "l'absence d'ergonomie peut faire couler votre entreprise : hausse de l'absentéisme, inefficacité des processus de travail, surcoûts liés à la gestion des RH, diffultés à garder les employés, peine à se démarquer de la concurrence ..."
           }
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
-  
-          <Step emoji="🤕" text="Dégradation de la santé des individus" />
+
+          <Step emoji="🤕" text="dégradation de la santé des employés" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😩" text="Baisse de la productivité et de la qualité" />
-
-          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
-
-          <Step emoji="💰" text="Surcoûts liés à la gestion des ressources humaines" />
+          <Step emoji="😩" text="baisse de la productivité et de la qualité" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😔" text="Diminution de l'attractivité de l'entreprise" />
+          <Step emoji="💰" text="surcoûts liés à l'interim et la formation" />
+
+          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
+          
+          <Step emoji="😔" text="diminution de l'attractivité de l'entreprise" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="🤔" text="Incapacité à innover et rester compétitif" />
+          <Step emoji="🤔" text="incapacité à innover pour rester compétitif" />
 
         </div>
         {/* </div>
