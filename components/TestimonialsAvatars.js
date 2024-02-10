@@ -63,7 +63,7 @@ const TestimonialsAvatars = ({ priority = false }) => {
         </div>
 
         <div className="text-base text-base-content/80">
-          <span className="font-semibold text-base-content">+10</span>{" "}
+          <span className="font-semibold text-base-content">+ 12</span>{" "}
           entreprises accompagnées
         </div>
       </div>
