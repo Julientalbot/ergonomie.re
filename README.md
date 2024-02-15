@@ -1,3 +1,3 @@
-# ergonomie.re — Javascript
+# ergonomie.re
 
-Salut 👋 c'est Julien de [ergonomie.re](https://ergonomie.re/#à-propos/).
+Salut 👋 c'est Julien Talbot de [ergonomie.re](https://ergonomie.re/#à-propos/).
