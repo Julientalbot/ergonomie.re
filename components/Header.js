@@ -18,16 +18,16 @@ const links = [
     label: "Comment ?",
   },
   {
-  //   href: "/#why-me",
-  //   label: "Pourquoi moi ?",
-  // },
-  // {
+    //   href: "/#why-me",
+    //   label: "Pourquoi moi ?",
+    // },
+    // {
     href: "/#à-propos",
     label: "Qui suis-je ?",
   },
   // {
-    // href: "/blog",
-    // label: "Blog",
+  // href: "/blog",
+  // label: "Blog",
   // },
 ];
 
@@ -47,13 +47,13 @@ const Header = () => {
   return (
     <header className="bg-primary text-white">
       <nav
-        className="container flex items-center justify-between max-w-7xl p-2 mx-auto"
+        className="container mx-auto flex max-w-7xl items-center justify-between p-2"
         aria-label="Global"
       >
         {/* Your logo/name on large screens */}
         <div className="flex lg:flex-1">
           <Link
-            className="flex items-center gap-2 shrink-0 "
+            className="flex shrink-0 items-center gap-2 "
             href="/"
             title={`${config.appName} hompage`}
           >
@@ -83,7 +83,7 @@ const Header = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="white"
-              className="w-6 h-6 text-base-content"
+              className="text-base-content h-6 w-6"
             >
               <path
                 strokeLinecap="round"
@@ -95,12 +95,12 @@ const Header = () => {
         </div>
 
         {/* Your links on large screens */}
-        <div className="hidden lg:flex lg:justify-center lg:gap-2 lg:items-center">
+        <div className="hidden lg:flex lg:items-center lg:justify-center lg:gap-2">
           {links.map((link) => (
             <Link
               href={link.href}
               key={link.href}
-              className="px-6 py-2 rounded-lg hover:bg-base-100 hover:text-black"
+              className="hover:bg-base-100 rounded-lg px-6 py-2 hover:text-black"
               title={link.label}
             >
               {link.label}
@@ -109,18 +109,18 @@ const Header = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">{cta}</div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full p-2 overflow-y-auto bg-primary sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
+          className={`bg-primary sm:ring-neutral/10 fixed inset-y-0 right-0 z-10 w-full origin-right transform overflow-y-auto p-2 transition duration-300 ease-in-out sm:max-w-sm sm:ring-1`}
         >
           {/* Your logo/name on small screens */}
           <div className="flex items-center justify-between">
             <Link
-              className="flex items-center gap-2 shrink-0 "
+              className="flex shrink-0 items-center gap-2 "
               title={`${config.appName} hompage`}
               href="/"
             >
@@ -146,7 +146,7 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="h-6 w-6"
               >
                 <path
                   strokeLinecap="round"
@@ -158,9 +158,9 @@ const Header = () => {
           </div>
 
           {/* Your links on small screens */}
-          <div className="flow-root mt-6">
+          <div className="mt-6 flow-root">
             <div className="py-4">
-              <div className="flex flex-col gap-y-4 items-center">
+              <div className="flex flex-col items-center gap-y-4">
                 {links.map((link) => (
                   <Link
                     onClick={() => setIsOpen(false)}

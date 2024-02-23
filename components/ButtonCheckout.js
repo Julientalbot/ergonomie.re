@@ -39,7 +39,7 @@ const ButtonCheckout = ({ priceId, mode = "payment" }) => {
         <span className="loading loading-spinner loading-xs"></span>
       ) : (
         <svg
-          className="w-5 h-5 fill-primary-content group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-200"
+          className="fill-primary-content h-5 w-5 transition-transform duration-200 group-hover:-rotate-3 group-hover:scale-110"
           viewBox="0 0 375 509"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

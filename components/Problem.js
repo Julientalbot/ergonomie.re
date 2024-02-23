@@ -3,7 +3,7 @@ import CTAButton from "./CTAButton";
 const Arrow = ({ extraStyle }) => {
   return (
     <svg
-      className={`shrink-0 w-12 fill-black opacity-70 ${extraStyle}`}
+      className={`w-12 shrink-0 fill-black opacity-70 ${extraStyle}`}
       viewBox="0 0 138 138"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Arrow = ({ extraStyle }) => {
 };
 const Step = ({ emoji, text }) => {
   return (
-    <div className="w-full md:w-48 flex flex-col gap-2 items-center justify-center">
+    <div className="flex w-full flex-col items-center justify-center gap-2 md:w-48">
       <span className="text-4xl">{emoji}</span>
       <h3 className="font-bold">{text}</h3>
     </div>
@@ -44,27 +44,26 @@ const Step = ({ emoji, text }) => {
 const Problem = () => {
   return (
     <section className="scroll-mt-8" id="pourquoi">
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center rounded-lg">
-        <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
+      <div className="mx-auto max-w-7xl rounded-lg px-4 py-16 text-center">
+        <h2 className="mx-auto mb-6 max-w-3xl text-4xl font-extrabold tracking-tight md:mb-8 md:text-5xl">
           {"chaque situation de travail problématique vous draine "}
-          <span className="relative absolute before:-inset-1 rounded-lg bg-primary text-white z-10 before:-z-10">
-          {/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
-          {"4059€ euros"}
+          <span className="bg-primary absolute relative z-10 rounded-lg text-white before:-inset-1 before:-z-10">
+            {/* <span className="relative before:absolute before:-inset-1 before:rounded-lg before:bg-primary text-white z-10 before:-z-10"> */}
+            {"4059€ euros"}
           </span>
           {" par an et par employé* "}
         </h2>
-        <p className="opacity-60 mb-4">
+        <p className="mb-4 opacity-60">
           {
             "* « Sur l’origine et le coût de l’absentéisme en France », Institut Sapiens (2018)"
           }
         </p>
-        <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
+        <p className="mx-auto mb-12 max-w-xl text-lg leading-relaxed opacity-90 md:mb-20">
           {
             "l'absence d'ergonomie peut faire couler votre entreprise : hausse de l'absentéisme, inefficacité des processus de travail, surcoûts liés à la gestion des RH, diffultés à garder les employés, peine à se démarquer de la concurrence ..."
           }
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
-
+        <div className="mb-12 flex flex-col items-center justify-center gap-6 md:flex-row md:items-start">
           <Step emoji="🤕" text="dégradation de la santé des employés" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
@@ -76,13 +75,15 @@ const Problem = () => {
           <Step emoji="💰" text="surcoûts liés à l'interim et la formation" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
-          
-          <Step emoji="😔" text="diminution de l'attractivité de l'entreprise" />
+
+          <Step
+            emoji="😔"
+            text="diminution de l'attractivité de l'entreprise"
+          />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
           <Step emoji="🤔" text="incapacité à innover pour rester compétitif" />
-
         </div>
         {/* </div>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
@@ -90,7 +91,7 @@ const Problem = () => {
         </p>
         <div className="flex justify-center"> */}
         <div className="flex justify-center">
-          <CTAButton className="text-white animate-ctaBlack" />
+          <CTAButton className="animate-ctaBlack text-white" />
         </div>
       </div>
     </section>
@@ -99,33 +100,83 @@ const Problem = () => {
 
 export default Problem;
 
-{/* <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12"> */}
-{/*  */}
+{
+  /* <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12"> */
+}
+{
+  /*  */
+}
 // Élément de départ
-{/* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */}
-{/*  */}
+{
+  /* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */
+}
+{
+  /*  */
+}
 // Trois flèches pointant vers la droite
-{/* <div className="flex flex-col items-center justify-between h-full"> */}
-  {/* <Arrow extraStyle="md:rotate-90" /> */}
-  {/* <Arrow extraStyle="md:rotate-90" /> */}
-  {/* <Arrow extraStyle="md:rotate-90" /> */}
-{/* </div> */}
-{/*  */}
+{
+  /* <div className="flex flex-col items-center justify-between h-full"> */
+}
+{
+  /* <Arrow extraStyle="md:rotate-90" /> */
+}
+{
+  /* <Arrow extraStyle="md:rotate-90" /> */
+}
+{
+  /* <Arrow extraStyle="md:rotate-90" /> */
+}
+{
+  /* </div> */
+}
+{
+  /*  */
+}
 // Trois éléments alignés verticalement
-{/* <div className="flex flex-col items-center gap-6"> */}
-  {/* <Step emoji="🤕" text="Accidents et arrêts maladie en hausse" /> */}
-  {/* <Step emoji="📉" text="Dégradation de la performance économique" /> */}
-  {/* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */}
-{/* </div> */}
-{/*  */}
+{
+  /* <div className="flex flex-col items-center gap-6"> */
+}
+{
+  /* <Step emoji="🤕" text="Accidents et arrêts maladie en hausse" /> */
+}
+{
+  /* <Step emoji="📉" text="Dégradation de la performance économique" /> */
+}
+{
+  /* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */
+}
+{
+  /* </div> */
+}
+{
+  /*  */
+}
 // Trois flèches convergentes
-{/* <div className="flex flex-col items-center justify-between h-full"> */}
-  {/* <Arrow extraStyle="md:rotate-90" /> */}
-  {/* <Arrow extraStyle="md:rotate-90" /> */}
-  {/* <Arrow extraStyle="md:rotate-90" /> */}
-{/* </div> */}
-{/*  */}
+{
+  /* <div className="flex flex-col items-center justify-between h-full"> */
+}
+{
+  /* <Arrow extraStyle="md:rotate-90" /> */
+}
+{
+  /* <Arrow extraStyle="md:rotate-90" /> */
+}
+{
+  /* <Arrow extraStyle="md:rotate-90" /> */
+}
+{
+  /* </div> */
+}
+{
+  /*  */
+}
 // Élément final
-{/* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */}
-{/*  */}
-{/* </div> */}
+{
+  /* <Step emoji="🛠️" text="Conditions de travail dégradées" /> */
+}
+{
+  /*  */
+}
+{
+  /* </div> */
+}

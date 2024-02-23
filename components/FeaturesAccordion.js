@@ -73,7 +73,7 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
   return (
     <li>
       <button
-        className="relative flex gap-2 items-start w-full py-5 text-base font-medium text-left md:text-lg"
+        className="relative flex w-full items-start gap-2 py-5 text-left text-base font-medium md:text-lg"
         onClick={(e) => {
           e.preventDefault();
           setFeatureSelected();
@@ -81,14 +81,16 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
         aria-expanded={isOpen}
       >
         <div
-          className={`mt-2 transition-transform duration-5000 ${isOpen ? "rotate-180" : "rotate-0"
-            }`}
+          className={`duration-5000 mt-2 transition-transform ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
         >
           <ChevronDown />
         </div>
         <span
-          className={`flex-1 text-base-content ${isOpen ? "text-primary font-semibold" : ""
-            }`}
+          className={`text-base-content flex-1 ${
+            isOpen ? "text-primary font-semibold" : ""
+          }`}
         >
           <h3 className="inline text-4xl">{title}</h3>
         </span>
@@ -96,7 +98,7 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
 
       <div
         ref={accordion}
-        className={`transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden`}
+        className={`text-base-content-secondary overflow-hidden transition-all duration-300 ease-in-out`}
         style={
           isOpen
             ? { maxHeight: accordion?.current?.scrollHeight, opacity: 1 }
@@ -155,16 +157,16 @@ const FeaturesAccordion = () => {
   const [featureSelected, setFeatureSelected] = useState(0);
 
   return (
-    <section className="px-2 py-6 max-w-7xl mx-auto" id="comment">
+    <section className="mx-auto max-w-7xl px-2 py-6" id="comment">
       <div className="">
-        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-8 text-center">
-        Conserver la santé des individus et augmenter
-        <span className="bg-primary rounded-lg text-white px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-        les performances
+        <h2 className="mb-8 text-center text-4xl font-extrabold tracking-tight lg:text-6xl">
+          Conserver la santé des individus et augmenter
+          <span className="bg-primary ml-1 whitespace-nowrap rounded-lg px-2 leading-relaxed text-white md:ml-1.5 md:px-4">
+            les performances
           </span>
           {"de l'entreprise"}
         </h2>
-        <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
+        <div className=" flex flex-col gap-12 md:flex-row md:gap-24">
           <div className="flex flex-col items-center justify-center gap-8 sm:gap-12 lg:flex-row">
             <ul className="w-full">
               {features.map((feature, i) => (

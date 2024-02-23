@@ -26,11 +26,11 @@ const avatars = [
 
 const TestimonialsAvatars = ({ priority = false }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-3">
+    <div className="flex flex-col items-center justify-center gap-3 md:flex-row md:items-start">
       {/* AVATARS */}
-      <div className={`-space-x-5 avatar-group justy-start`}>
+      <div className={`avatar-group justy-start -space-x-5`}>
         {avatars.map((image, i) => (
-          <div className="avatar w-12 h-12" key={i}>
+          <div className="avatar h-12 w-12" key={i}>
             <Image
               src={image.src}
               alt={image.alt}
@@ -43,14 +43,14 @@ const TestimonialsAvatars = ({ priority = false }) => {
       </div>
 
       {/* RATING */}
-      <div className="flex flex-col justify-center items-center md:items-start gap-1">
+      <div className="flex flex-col items-center justify-center gap-1 md:items-start">
         <div className="rating">
           {[...Array(5)].map((_, i) => (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-5 h-5 text-yellow-500"
+              className="h-5 w-5 text-yellow-500"
               key={i}
             >
               <path
@@ -62,8 +62,8 @@ const TestimonialsAvatars = ({ priority = false }) => {
           ))}
         </div>
 
-        <div className="text-base text-base-content/80">
-          <span className="font-semibold text-base-content">+ 12</span>{" "}
+        <div className="text-base-content/80 text-base">
+          <span className="text-base-content font-semibold">+ 12</span>{" "}
           entreprises accompagnées
         </div>
       </div>

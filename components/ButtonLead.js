@@ -45,12 +45,12 @@ const ButtonLead = ({ extraStyle }) => {
         ref={inputRef}
         autoComplete="email"
         placeholder="Email"
-        className="input input-bordered border-2 w-full placeholder:opacity-80 "
+        className="input input-bordered w-full border-2 placeholder:opacity-80 "
         onChange={(e) => setEmail(e.target.value)}
       />
 
       <button
-        className="btn btn-error btn-block bg-red-600 text-white animate-ctaRed shadow-zinc-700 hover:animate-none"
+        className="btn btn-error btn-block animate-ctaRed bg-red-600 text-white shadow-zinc-700 hover:animate-none"
         type="submit"
         disabled={isDisabled}
       >
@@ -62,7 +62,7 @@ const ButtonLead = ({ extraStyle }) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
-            className="w-5 h-5"
+            className="h-5 w-5"
           >
             <path
               fillRule="evenodd"

@@ -37,36 +37,36 @@ const Testimonial = ({ i }) => {
 
   return (
     <li key={i}>
-      <figure className="relative max-w-lg h-full p-6 md:p-10 bg-base-200 rounded-2xl max-md:text-sm flex flex-col">
+      <figure className="bg-base-200 relative flex h-full max-w-lg flex-col rounded-2xl p-6 max-md:text-sm md:p-10">
         <blockquote className="relative flex-1">
           <p className="text-base-content/80 leading-relaxed">
             {testimonial.text}
           </p>
         </blockquote>
-        <figcaption className="relative flex items-center justify-start gap-4 pt-4 mt-4 md:gap-8 md:pt-8 md:mt-8 border-t border-base-content/5">
-          <div className="w-full flex items-center justify-between gap-2">
+        <figcaption className="border-base-content/5 relative mt-4 flex items-center justify-start gap-4 border-t pt-4 md:mt-8 md:gap-8 md:pt-8">
+          <div className="flex w-full items-center justify-between gap-2">
             <div>
-              <div className="font-medium text-base-content md:mb-0.5">
+              <div className="text-base-content font-medium md:mb-0.5">
                 {testimonial.name}
               </div>
               {testimonial.username && (
-                <div className="mt-0.5 text-sm text-base-content/80">
+                <div className="text-base-content/80 mt-0.5 text-sm">
                   {testimonial.username}
                 </div>
               )}
             </div>
 
-            <div className="overflow-hidden rounded-full bg-base-300 shrink-0">
+            <div className="bg-base-300 shrink-0 overflow-hidden rounded-full">
               {testimonial.img ? (
                 <Image
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
+                  className="h-10 w-10 rounded-full object-cover md:h-12 md:w-12"
                   src={list[i].img}
                   alt={`${list[i].name}'s testimonial for ${config.appName}`}
                   width={48}
                   height={48}
                 />
               ) : (
-                <span className="w-10 h-10 md:w-12 md:h-12 rounded-full flex justify-center items-center text-lg font-medium bg-base-300">
+                <span className="bg-base-300 flex h-10 w-10 items-center justify-center rounded-full text-lg font-medium md:h-12 md:w-12">
                   {testimonial.name.charAt(0)}
                 </span>
               )}
@@ -80,11 +80,11 @@ const Testimonial = ({ i }) => {
 
 const Testimonials3 = () => {
   return (
-    <section className="my-6 pb-4 scroll-mt-8">
-      <div className="p-2 max-w-7xl mx-auto">
-        <div className="flex flex-col text-center w-full mb-6">
+    <section className="my-6 scroll-mt-8 pb-4">
+      <div className="mx-auto max-w-7xl p-2">
+        <div className="mb-6 flex w-full flex-col text-center">
           <div className="">
-            <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
+            <h2 className="text-base-content text-4xl font-extrabold sm:text-5xl">
               {"Qu'en disent mes clients ?"}
             </h2>
           </div>
@@ -96,7 +96,7 @@ const Testimonials3 = () => {
 
         <ul
           role="list"
-          className="flex flex-col items-center lg:flex-row lg:items-stretch gap-6 lg:gap-8"
+          className="flex flex-col items-center gap-6 lg:flex-row lg:items-stretch lg:gap-8"
         >
           {[...Array(3)].map((e, i) => (
             <Testimonial key={i} i={i} />
