@@ -6,7 +6,7 @@ export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
 
   console.log("Ask GPT >>>");
   messages.map((m) =>
-    console.log(" - " + m.role.toUpperCase() + ": " + m.content)
+    console.log(" - " + m.role.toUpperCase() + ": " + m.content),
   );
 
   const body = JSON.stringify({
@@ -38,7 +38,7 @@ export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
         usage?.prompt_tokens +
         " / response: " +
         usage?.completion_tokens +
-        ")"
+        ")",
     );
     console.log("\n");
 

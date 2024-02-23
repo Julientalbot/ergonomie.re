@@ -22,7 +22,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+                className="inline h-[18px] w-[18px] shrink-0 opacity-80"
               >
                 <path
                   fillRule="evenodd"
@@ -34,12 +34,12 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-red-600 font-medium">
+          <li className="flex items-center gap-3 font-medium text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+              className="inline h-[18px] w-[18px] shrink-0"
             >
               <path
                 fillRule="evenodd"
@@ -59,7 +59,7 @@ const features = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8"
+        className="h-8 w-8"
       >
         <path
           strokeLinecap="round"
@@ -83,7 +83,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+                className="inline h-[18px] w-[18px] shrink-0 opacity-80"
               >
                 <path
                   fillRule="evenodd"
@@ -95,12 +95,12 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-red-600 font-medium">
+          <li className="flex items-center gap-3 font-medium text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+              className="inline h-[18px] w-[18px] shrink-0"
             >
               <path
                 fillRule="evenodd"
@@ -120,7 +120,7 @@ const features = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8"
+        className="h-8 w-8"
       >
         <path
           strokeLinecap="round"
@@ -145,7 +145,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+                className="inline h-[18px] w-[18px] shrink-0 opacity-80"
               >
                 <path
                   fillRule="evenodd"
@@ -157,12 +157,12 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-red-600 font-medium">
+          <li className="flex items-center gap-3 font-medium text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+              className="inline h-[18px] w-[18px] shrink-0"
             >
               <path
                 fillRule="evenodd"
@@ -184,7 +184,7 @@ const features = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8"
+        className="h-8 w-8"
       >
         <path
           strokeLinecap="round"
@@ -209,7 +209,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+                className="inline h-[18px] w-[18px] shrink-0 opacity-80"
               >
                 <path
                   fillRule="evenodd"
@@ -221,12 +221,12 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-red-600 font-medium">
+          <li className="flex items-center gap-3 font-medium text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+              className="inline h-[18px] w-[18px] shrink-0"
             >
               <path
                 fillRule="evenodd"
@@ -246,7 +246,7 @@ const features = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8"
+        className="h-8 w-8"
       >
         <path
           strokeLinecap="round"
@@ -271,7 +271,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+                className="inline h-[18px] w-[18px] shrink-0 opacity-80"
               >
                 <path
                   fillRule="evenodd"
@@ -283,12 +283,12 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-red-600 font-medium">
+          <li className="flex items-center gap-3 font-medium text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+              className="inline h-[18px] w-[18px] shrink-0"
             >
               <path
                 fillRule="evenodd"
@@ -308,7 +308,7 @@ const features = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8"
+        className="h-8 w-8"
       >
         <path
           strokeLinecap="round"
@@ -333,7 +333,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+                className="inline h-[18px] w-[18px] shrink-0 opacity-80"
               >
                 <path
                   fillRule="evenodd"
@@ -345,12 +345,12 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-red-600 font-medium">
+          <li className="flex items-center gap-3 font-medium text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+              className="inline h-[18px] w-[18px] shrink-0"
             >
               <path
                 fillRule="evenodd"
@@ -370,7 +370,7 @@ const features = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8"
+        className="h-8 w-8"
       >
         <path
           strokeLinecap="round"
@@ -398,7 +398,7 @@ const FeaturesListicle = () => {
     const interval = setInterval(() => {
       if (!hasClicked) {
         const index = features.findIndex(
-          (feature) => feature.name === featureSelected
+          (feature) => feature.name === featureSelected,
         );
         const nextIndex = (index + 1) % features.length;
         setFeatureSelected(features[nextIndex].name);
@@ -418,7 +418,7 @@ const FeaturesListicle = () => {
           root: null,
           rootMargin: "0px",
           threshold: 0.5,
-        }
+        },
       );
       if (featuresEndRef.current) {
         observer.observe(featuresEndRef.current);
@@ -432,13 +432,13 @@ const FeaturesListicle = () => {
 
   return (
     <section className="pt-16" id="features">
-      <div className="max-w-3xl mx-auto">
-        <div className="max-md:px-8 max-w-3xl">
-          <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
+      <div className="mx-auto max-w-3xl">
+        <div className="max-w-3xl max-md:px-8">
+          <h2 className="mb-8 text-3xl font-extrabold tracking-tight lg:text-5xl">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
             {"Méthodologie de l'intervention"}
           </h2>
-          <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
+          <div className="text-base-content/80 mb-8 leading-relaxed lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
             {
               "Notre méthodologie en cinq étapes clés allie analyse rigoureuse et innovation pratique pour optimiser la performance et le bien-être au sein de votre entreprise. Chaque étape est conçue pour apporter des avantages spécifiques, assurant des résultats durables et mesurables."
@@ -448,7 +448,7 @@ const FeaturesListicle = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-4 md:flex justify-start gap-4 md:gap-12 max-md:px-8 max-w-3xl mx-auto mb-8">
+        <div className="mx-auto mb-8 grid max-w-3xl grid-cols-4 justify-start gap-4 max-md:px-8 md:flex md:gap-12">
           {features.map((feature, index) => (
             <span
               key={feature.name}
@@ -456,10 +456,10 @@ const FeaturesListicle = () => {
                 if (!hasClicked) setHasClicked(true);
                 setFeatureSelected(feature.name);
               }}
-              className={`flex flex-col items-center justify-center gap-3 select-none cursor-pointer p-2 duration-200 group`}
+              className={`group flex cursor-pointer select-none flex-col items-center justify-center gap-3 p-2 duration-200`}
             >
               <span
-                className={`duration-100 text-3xl ${
+                className={`text-3xl duration-100 ${
                   featureSelected === feature.name
                     ? "text-red-600"
                     : "text-base-content/30 group-hover:text-base-content/50"
@@ -468,7 +468,7 @@ const FeaturesListicle = () => {
                 {index + 1}
               </span>
               <span
-                className={`font-semibold text-sm ${
+                className={`text-sm font-semibold ${
                   featureSelected === feature.name
                     ? "text-red-600"
                     : "text-base-content/50"
@@ -480,12 +480,12 @@ const FeaturesListicle = () => {
           ))}
         </div>
         <div className="">
-          <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center md:justify-start md:items-center gap-12">
+          <div className="mx-auto flex max-w-3xl flex-col justify-center gap-12 md:flex-row md:items-center md:justify-start">
             <div
-              className="text-base-content/80 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity"
+              className="text-base-content/80 animate-opacity max-w-xl space-y-4 px-12 py-12 leading-relaxed md:px-0"
               key={featureSelected}
             >
-              <h3 className="font-semibold text-base-content text-lg">
+              <h3 className="text-base-content text-lg font-semibold">
                 {features.find((f) => f.name === featureSelected)["name"]}
               </h3>
 

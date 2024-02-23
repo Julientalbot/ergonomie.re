@@ -39,6 +39,6 @@ export const sendEmail = async ({ to, subject, text, html, replyTo }) => {
   await mg.messages.create(
     (config.mailgun.subdomain ? `${config.mailgun.subdomain}.` : "") +
       config.domainName,
-    data
+    data,
   );
 };

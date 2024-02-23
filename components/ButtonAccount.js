@@ -57,13 +57,13 @@ const ButtonAccount = () => {
               <img
                 src={user?.user_metadata?.avatar_url}
                 alt={"Profile picture"}
-                className="w-6 h-6 rounded-full shrink-0"
+                className="h-6 w-6 shrink-0 rounded-full"
                 referrerPolicy="no-referrer"
                 width={24}
                 height={24}
               />
             ) : (
-              <span className="w-8 h-8 bg-base-100 flex justify-center items-center rounded-full shrink-0 capitalize">
+              <span className="bg-base-100 flex h-8 w-8 shrink-0 items-center justify-center rounded-full capitalize">
                 {user?.email?.charAt(0)}
               </span>
             )}
@@ -79,8 +79,8 @@ const ButtonAccount = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className={`w-5 h-5 duration-200 opacity-50 ${
-                  open ? "transform rotate-180 " : ""
+                className={`h-5 w-5 opacity-50 duration-200 ${
+                  open ? "rotate-180 transform " : ""
                 }`}
               >
                 <path
@@ -100,17 +100,17 @@ const ButtonAccount = () => {
             leaveTo="transform scale-95 opacity-0"
           >
             <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-[16rem] transform">
-              <div className="overflow-hidden rounded-xl shadow-xl ring-1 ring-base-content ring-opacity-5 bg-base-100 p-1">
+              <div className="ring-base-content bg-base-100 overflow-hidden rounded-xl p-1 shadow-xl ring-1 ring-opacity-5">
                 <div className="space-y-0.5 text-sm">
                   <button
-                    className="flex items-center gap-2 hover:bg-base-300 duration-200 py-1.5 px-4 w-full rounded-lg font-medium"
+                    className="hover:bg-base-300 flex w-full items-center gap-2 rounded-lg px-4 py-1.5 font-medium duration-200"
                     onClick={handleBilling}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
-                      className="w-5 h-5"
+                      className="h-5 w-5"
                     >
                       <path
                         fillRule="evenodd"
@@ -121,14 +121,14 @@ const ButtonAccount = () => {
                     Billing
                   </button>
                   <button
-                    className="flex items-center gap-2 hover:bg-error/20 hover:text-error duration-200 py-1.5 px-4 w-full rounded-lg font-medium"
+                    className="hover:bg-error/20 hover:text-error flex w-full items-center gap-2 rounded-lg px-4 py-1.5 font-medium duration-200"
                     onClick={handleSignOut}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
-                      className="w-5 h-5"
+                      className="h-5 w-5"
                     >
                       <path
                         fillRule="evenodd"

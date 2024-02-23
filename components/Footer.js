@@ -7,18 +7,18 @@ import Link from "next/link";
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
 
-import appInfos from "@/package.json"
+import appInfos from "@/package.json";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white border-t border-base-content/10">
-      <div className="max-w-7xl mx-auto px-8 py-24">
-        <div className=" flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="w-full md:w-96 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <footer className="bg-primary border-base-content/10 border-t text-white">
+      <div className="mx-auto max-w-7xl px-8 py-24">
+        <div className=" flex flex-col flex-wrap md:flex-row md:flex-nowrap lg:items-start">
+          <div className="mx-auto w-full flex-shrink-0 text-center md:mx-0 md:w-96 md:text-left">
             <Link
               href="/#"
               aria-current="page"
-              className="flex gap-2 justify-center md:justify-start items-center"
+              className="flex items-center justify-center gap-2 md:justify-start"
             >
               <Image
                 src={logo}
@@ -32,39 +32,40 @@ const Footer = () => {
 
             <p className="mt-3 text-sm">{config.appDescription}</p>
             <p className="mt-3 text-sm">
-              Copyright © {new Date().getFullYear()} - All rights reserved - <span className="text-xs opacity-75">v{appInfos.version}</span>
+              Copyright © {new Date().getFullYear()} - All rights reserved -{" "}
+              <span className="text-xs opacity-75">v{appInfos.version}</span>
             </p>
           </div>
-          <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
-            <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-              <div className="footer-title font-semibold tracking-widest text-sm md:text-left mb-3">
+          <div className="-mb-10 mt-10 flex flex-grow flex-wrap justify-center text-center md:mt-0">
+            <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+              <div className="footer-title mb-3 text-sm font-semibold tracking-widest md:text-left">
                 LINKS
               </div>
 
-              <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
+              <div className="mb-10 flex flex-col items-center justify-center gap-2 text-sm md:items-start">
                 <Link href="/blog" className="link link-hover">
                   Blog
                 </Link>
               </div>
             </div>
 
-            <div className="lg:w-1/3 md:w-1/2 w-full px-4 flex flex-col justify-between">
+            <div className="flex w-full flex-col justify-between px-4 md:w-1/2 lg:w-1/3">
               <div>
-                <div className="footer-title font-semibold tracking-widest text-sm md:text-left mb-3">
+                <div className="footer-title mb-3 text-sm font-semibold tracking-widest md:text-left">
                   Contact
                 </div>
 
-                <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
+                <div className="mb-10 flex flex-col items-center justify-center gap-2 text-sm md:items-start">
                   <Link
                     href="mailto:julien.talbot@ergonomie.re"
-                    className="link link-hover flex gap-2 items-center"
+                    className="link link-hover flex items-center gap-2"
                   >
                     <Mail />
                     julien.talbot@ergonomie.re
                   </Link>
                   <Link
                     href="tel:+262693655544"
-                    className="link link-hover flex gap-2 items-center"
+                    className="link link-hover flex items-center gap-2"
                   >
                     <Phone />
                     +262693655544
@@ -75,7 +76,7 @@ const Footer = () => {
                 <Link
                   href="https://twitter.com/ergonomie_re"
                   target="_blank"
-                  className="p-1 rounded-lg bg-base-100"
+                  className="bg-base-100 rounded-lg p-1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -92,21 +93,21 @@ const Footer = () => {
                 <Link
                   href="https://www.facebook.com/profile.php?id=100088132995870"
                   target="_blank"
-                  className="p-1 rounded-lg bg-base-100"
+                  className="bg-base-100 rounded-lg p-1"
                 >
                   <Facebook color="black" size={24} />
                 </Link>
                 <Link
                   href="https://www.instagram.com/julien.talbot.ergonomie/"
                   target="_blank"
-                  className="p-1 rounded-lg bg-base-100"
+                  className="bg-base-100 rounded-lg p-1"
                 >
                   <Instagram color="black" size={24} />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/julien-talbot-ergonome/"
                   target="_blank"
-                  className="p-1 rounded-lg bg-base-100"
+                  className="bg-base-100 rounded-lg p-1"
                 >
                   <Linkedin color="black" size={24} />
                 </Link>
