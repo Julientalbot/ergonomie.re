@@ -29,8 +29,8 @@ export default function Home() {
         <Hero />{" "}
         {/* unaware / votre problème : le manque d'ergonomie coûte cher */}
         {/* <Demo />  */}
-        <Testimonial1Small />
-        <WithWithout />
+        {/* <Testimonial1Small /> */}
+        {/* <WithWithout /> */}
         <Problem />{" "}
         {/* problem aware : Agitation du problème = listing précis des effets de l'absence d'ergonomie et d'EFC */}
         <FeaturesAccordion2 />{" "}
