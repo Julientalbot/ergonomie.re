@@ -18,7 +18,10 @@ export const viewport = {
 
 // This adds default SEO tags to all pages in our app.
 // You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags();
+export const metadata = {
+  ...getSEOTags(),
+  manifest: "/manifest.json",
+};
 
 export default function RootLayout({ children }) {
   return (

@@ -2,13 +2,13 @@
   "short_name": "Ergonomie",
   "name": "Julien Talbot",
   "icons": [
-   {
-      "src": "/assets/images/logos/android-chrome-192x192.png",
+    {
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/images/logos/android-chrome-512x512.png",
+      "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
