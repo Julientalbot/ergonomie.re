@@ -49,10 +49,15 @@ const ButtonAccount = () => {
   };
 
   return (
-    <Popover className="relative z-10">
+    <Popover className="relative z-[100]">
       {({ open }) => (
         <>
-          <Popover.Button className="btn">
+          <Popover.Button
+            onClick={() => {
+              if (!user) window.location.href = "/signin";
+            }}
+            className="btn btn-sm"
+          >
             {user?.user_metadata?.avatar_url ? (
               <img
                 src={user?.user_metadata?.avatar_url}
@@ -62,19 +67,19 @@ const ButtonAccount = () => {
                 width={24}
                 height={24}
               />
-            ) : (
+            ) : user?.email ? (
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full capitalize">
                 {user?.email?.charAt(0)}
               </span>
-            )}
+            ) : null}
 
             {user?.user_metadata?.name ||
               user?.email?.split("@")[0] ||
-              "Account"}
+              "Connexion"}
 
             {isLoading ? (
               <span className="loading loading-spinner loading-xs"></span>
-            ) : (
+            ) : user?.email ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -89,7 +94,7 @@ const ButtonAccount = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            )}
+            ) : null}
           </Popover.Button>
           <Transition
             enter="transition duration-100 ease-out"
@@ -99,16 +104,16 @@ const ButtonAccount = () => {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Popover.Panel className="absolute left-0 z-10 mt-3 w-screen max-w-[16rem] transform">
+            <Popover.Panel
+              className={`absolute left-0 z-10 mt-3 w-screen max-w-[16rem] transform ${!user?.email ? "hidden" : ""}`}  
+            >
               <div className="ring-base-content bg-base-100 overflow-hidden rounded-xl text-primary p-1 shadow-xl ring-1 ring-opacity-5">
                 <div className="space-y-0.5 text-sm">
                   <a
                     className="hover:bg-base-300 flex w-full items-center gap-2 rounded-lg px-4 py-1.5 font-medium duration-200"
                     href={"/dashboard"}
                   >
-                    <span>
-                      {"📒"}
-                    </span>
+                    <span>{"📒"}</span>
                     Dashboard
                   </a>
                   <button
