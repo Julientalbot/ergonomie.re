@@ -1,39 +1,41 @@
-"use client"
-import React, { useState, useEffect } from "react";
+"use client";
 
-const PWAButton = () => {
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
+import { useEffect } from "react";
 
+function PWAInstall() {
   useEffect(() => {
-    const handler = (e) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
+    if (!window || typeof window === "undefined") return;
+    let installPrompt = null;
+    const installButton = document?.querySelector("#install");
 
-    window.addEventListener("beforeinstallprompt", handler);
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      installPrompt = event;
+      installButton.removeAttribute("hidden");
+    });
 
-    return () => {
-      window.removeEventListener("beforeinstallprompt", handler);
-    };
-  }, []);
+    installButton?.addEventListener("click", async () => {
+      if (!installPrompt) return;
 
-  const handleInstallClick = async () => {
-    console.log("Install button clicked");
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const choiceResult = await deferredPrompt.userChoice;
-      if (choiceResult.outcome === "accepted") {
-        console.log("Accepter");
-      } else {
-        console.log("Refused");
-      }
-      setDeferredPrompt(null);
+      installPrompt?.prompt()
+      installPrompt?.userChoice
+        .then(console.log)
+        .catch(console.error)
+        .finally(disableInAppInstallPrompt);
+    });
+
+    function disableInAppInstallPrompt() {
+      installPrompt = null;
+      installButton.setAttribute("hidden", "");
+      installButton.classList.add("hidden")
     }
-  };
+  }, [])
 
   return (
-    <button onClick={handleInstallClick}>{"Installer l'application"}</button>
-  );
-};
+    <button
+      id="install"
+    >{"Installer l'application"}</button>
+  )
+}
 
-export default PWAButton;
+export default PWAInstall;
