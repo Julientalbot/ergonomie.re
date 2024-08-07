@@ -115,6 +115,24 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <div className="flex gap-8 justify-center">
+          <img src="/assets/images/fse/2.jpg" width={140} />
+          <img src="/assets/images/fse/3.jpg" width={140} />
+        </div>
+        <div className="mx-auto max-w-lg text-center p-4 mt-4">
+          <small>
+            {
+              "Ce site a été financé par l’Union Européenne dans le cadre du programme"
+            }
+            {
+              "FEDER-FSE+ Réunion dont l’Autorité de gestion est la Région Réunion."
+            }
+            {"L’Europe s’engage à La Réunion avec le fonds FEDER"}
+          </small>
+        </div>
+      </div>
     </footer>
   );
 };
