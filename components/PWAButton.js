@@ -18,6 +18,7 @@ const PWAButton = () => {
   }, []);
 
   const handleInstallClick = async () => {
+    console.log("Install button clicked");
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const choiceResult = await deferredPrompt.userChoice;
