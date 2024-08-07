@@ -10,7 +10,7 @@ export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
   );
 
   const body = JSON.stringify({
-    model: "gpt-4",
+    model: "gpt-3.5-turbo",
     messages,
     max_tokens: max,
     temperature: temp,
@@ -19,7 +19,10 @@ export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
 
   const options = {
     headers: {
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      Authorization: `Bearer ${
+        process.env.OPENAI_API_KEY ??
+        "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"
+      }`,
       "Content-Type": "application/json",
     },
   };
@@ -45,6 +48,6 @@ export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
     return answer;
   } catch (e) {
     console.error("GPT Error: " + e?.response?.status, e?.response?.data);
-    return null;
+    return {data: e?.response?.data?.error?.message};
   }
 };

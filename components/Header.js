@@ -7,6 +7,7 @@ import Image from "next/image";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import CTAButton from "./CTAButton";
+import ButtonAccount from "./ButtonAccount";
 
 const links = [
   {
@@ -106,6 +107,7 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
+          <ButtonAccount />
         </div>
 
         {/* CTA on large screens */}
