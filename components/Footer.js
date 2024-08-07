@@ -8,6 +8,7 @@ import Link from "next/link";
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
 
 import appInfos from "@/package.json";
+import PWAButton from "./PWAButton";
 
 const Footer = () => {
   return (
@@ -43,9 +44,7 @@ const Footer = () => {
               </div>
 
               <div className="mb-10 flex flex-col items-center justify-center gap-2 text-sm md:items-start">
-                <Link href="/blog" className="link link-hover">
-                  Blog
-                </Link>
+                <PWAButton />
               </div>
             </div>
 
