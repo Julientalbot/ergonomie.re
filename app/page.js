@@ -25,7 +25,7 @@ export default function Home() {
         <Header />
       </Suspense>{" "}
       {/* logo / [votre problème / notre solution / ce qui nous différencie / qui je suis] / CTA(s) */}
-      <main>
+      <main className="bg-base-100">
         <Hero />{" "}
         {/* unaware / votre problème : le manque d'ergonomie coûte cher */}
         {/* <Demo />  */}

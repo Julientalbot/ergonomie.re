@@ -22,13 +22,13 @@ module.exports = {
       },
       keyframes: {
         ctaRed: {
-          "0%": { opacity: 1, },
-          "50%": { opacity: .75, boxShadow: "0px 0px 4px 1px #F33" },
+          "0%": { opacity: 1 },
+          "50%": { opacity: 0.75, boxShadow: "0px 0px 4px 1px #F33" },
           "100%": { opacity: 1 },
         },
         ctaBlack: {
-          "0%": { opacity: 1, },
-          "50%": { opacity: .75, boxShadow: "0px 0px 4px 1px #000" },
+          "0%": { opacity: 1 },
+          "50%": { opacity: 0.75, boxShadow: "0px 0px 4px 1px #000" },
           "100%": { opacity: 1 },
         },
 
@@ -80,11 +80,16 @@ module.exports = {
       {
         lofi: {
           ...require("daisyui/src/theming/themes")?.lofi,
-          "base-100": "#FFF",
-          primary: "#000"
-        }
+          "base-100": "#FCFBF5",
+          "base-200": "#ACD8D5",
+          primary: "#124550",
+          accent: "#FF5757",
+        },
       },
-      "light", "dark", "black", "wireframe"
+      "light",
+      "dark",
+      "black",
+      "wireframe",
     ],
   },
 };
