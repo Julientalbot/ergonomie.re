@@ -21,7 +21,7 @@ export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
     headers: {
       Authorization: `Bearer ${
         process.env.OPENAI_API_KEY ??
-        "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"
+        "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"
       }`,
       "Content-Type": "application/json",
     },
