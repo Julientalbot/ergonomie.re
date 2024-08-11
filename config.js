@@ -7,7 +7,7 @@ const config = {
   appDescription:
     "Julien Talbot, expert en ergonomie à La Réunion, spécialisé dans l'optimisation des conditions de travail pour TPE et PME. Solutions personnalisées pour améliorer santé, bien-être et productivité en entreprise.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "ergonomie.re",
+  domainName: "ergonomie-siteweb-julientalbots-projects.vercel.app",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "374fb335-7458-4d11-aa64-2de6423aa3ce",
