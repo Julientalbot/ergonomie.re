@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Use this if you want to make a call to OpenAI GPT-4 for instance. userId is used to identify the user on openAI side.
-export const sendOpenAi = async (messages, userId, max = 100, temp = 1) => {
+export const sendOpenAi = async (messages, userId, max = 800, temp = 1) => {
   const url = "https://api.openai.com/v1/chat/completions";
 
   console.log("Ask GPT >>>");
