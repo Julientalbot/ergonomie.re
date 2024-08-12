@@ -9,9 +9,7 @@ export async function POST(req) {
   try {
     const {question} = await req.json();
     const prompt = `You are an expert in ergonomics. Answer the following question with detailed and practical advice:\n\n${question}`;
-    const { data } = await sendOpenAi([{role: "user", content: prompt}], "ergonomics", 100, 0.5);
-
-    const answer = data?.error?.message || data?.message|| data;
+    const answer = await sendOpenAi([{role: "user", content: prompt}], "ergonomics", 100, 0.5);
 
     return NextResponse.json({ answer });
   } catch (e) {
