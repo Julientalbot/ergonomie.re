@@ -52,16 +52,13 @@ const Footer = () => {
               </div>
 
               <div className="mb-10 flex flex-col items-center justify-center gap-2 text-sm md:items-start">
-                <Link
-                  href="/terms"
-                  className="link link-hover"
-                >
+                <Link href="/terms" className="link link-hover">
                   {"Mentions légales"}
                 </Link>
-                <Link
-                  href="/privacy"
-                  className="link link-hover"
-                >
+                <Link href="/cgv" className="link link-hover">
+                  {"CGV"}
+                </Link>
+                <Link href="/privacy" className="link link-hover">
                   {"Politique de confidentialité"}
                 </Link>
               </div>
