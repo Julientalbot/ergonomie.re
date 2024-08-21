@@ -46,6 +46,25 @@ const Footer = () => {
               <div className="mb-10 flex flex-col items-center justify-center gap-2 text-sm md:items-start">
                 <PWAButton />
               </div>
+
+              <div className="footer-title mb-3 text-sm font-semibold tracking-widest md:text-left">
+                LEGAL
+              </div>
+
+              <div className="mb-10 flex flex-col items-center justify-center gap-2 text-sm md:items-start">
+                <Link
+                  href="/terms"
+                  className="link link-hover"
+                >
+                  {"Mentions légales"}
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="link link-hover"
+                >
+                  {"Politique de confidentialité"}
+                </Link>
+              </div>
             </div>
 
             <div className="flex w-full flex-col justify-between px-4 md:w-1/2 lg:w-1/3">
